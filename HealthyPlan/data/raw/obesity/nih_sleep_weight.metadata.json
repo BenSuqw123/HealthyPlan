@@ -1,0 +1,16 @@
+{
+  "source_id": "nih_sleep_weight",
+  "title": "Sleep and Weight Management Relationships",
+  "publisher": "NIH",
+  "source_type": "html",
+  "original_url": "https://www.nih.gov/news-events/nih-research-matters/how-sleep-affects-weight-loss",
+  "publication_date": "2023-04",
+  "accessed_date": "2026-07-20",
+  "local_file": "obesity/nih_sleep_weight.html",
+  "checksum": "dc7aa7b79897883bb8f5799ea8f41a1bd41bb3011a3ae9abfd7e9561191b9b19",
+  "extraction_status": "extracted",
+  "language": "en",
+  "relevant_pages": "All",
+  "relevant_sections": "Cortisol, ghrelin, leptin, hormonal controls of hunger",
+  "verification_status": "downloaded_verified_tls"
+}

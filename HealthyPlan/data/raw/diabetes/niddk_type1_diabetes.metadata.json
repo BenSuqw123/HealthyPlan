@@ -1,0 +1,16 @@
+{
+  "source_id": "niddk_type1_diabetes",
+  "title": "Type 1 Diabetes Overview",
+  "publisher": "NIDDK",
+  "source_type": "html",
+  "original_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes",
+  "publication_date": "2023-12",
+  "accessed_date": "2026-07-20",
+  "local_file": "diabetes/niddk_type1_diabetes.html",
+  "checksum": "4c88284bff4983758fb438132df30dd3b6e8db315b4913ce2a82631333286720",
+  "extraction_status": "extracted",
+  "language": "en",
+  "relevant_pages": "All",
+  "relevant_sections": "General overview, diagnosis, insulin administration requirements",
+  "verification_status": "downloaded_verified_tls"
+}

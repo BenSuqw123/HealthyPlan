@@ -1,0 +1,16 @@
+{
+  "source_id": "nkf_nutrition_hub",
+  "title": "NKF Nutrition Hub",
+  "publisher": "National Kidney Foundation",
+  "source_type": "html",
+  "original_url": "https://www.kidney.org/nutrition",
+  "publication_date": "2023-01",
+  "accessed_date": "2026-07-20",
+  "local_file": "ckd/nkf_nutrition_hub.html",
+  "checksum": "475812c3b67d2ae44a7714cd9b58b0c0a33ae4807be3880d3fb028d9d1e9b21e",
+  "extraction_status": "extracted",
+  "language": "en",
+  "relevant_pages": "",
+  "relevant_sections": "All general educational content",
+  "verification_status": "downloaded_unverified_tls"
+}

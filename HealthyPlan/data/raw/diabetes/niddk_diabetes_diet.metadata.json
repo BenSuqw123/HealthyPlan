@@ -1,0 +1,16 @@
+{
+  "source_id": "niddk_diabetes_diet",
+  "title": "Diabetes Diet, Eating, & Physical Activity",
+  "publisher": "NIDDK",
+  "source_type": "html",
+  "original_url": "https://www.niddk.nih.gov/health-information/diabetes/overview/diet-eating-physical-activity",
+  "publication_date": "2023-12",
+  "accessed_date": "2026-07-20",
+  "local_file": "diabetes/niddk_diabetes_diet.html",
+  "checksum": "0f60855ae00d63a0f3ac0d3fe10d3fc8ab631f905dd3f2ec21eebdc6f4c21ff4",
+  "extraction_status": "extracted",
+  "language": "en",
+  "relevant_pages": "All",
+  "relevant_sections": "Carbohydrate management, exercise safety, meal planning",
+  "verification_status": "downloaded_verified_tls"
+}

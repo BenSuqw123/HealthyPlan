@@ -1,0 +1,16 @@
+{
+  "source_id": "cdc_prediabetes_monitoring",
+  "title": "Prediabetes Monitoring & Screening",
+  "publisher": "CDC",
+  "source_type": "html",
+  "original_url": "https://www.cdc.gov/diabetes/prevent-type-2/index.html",
+  "publication_date": "2023-08",
+  "accessed_date": "2026-07-20",
+  "local_file": "prediabetes/cdc_prediabetes_monitoring.html",
+  "checksum": "7ed1953812e88ae9fa6696c303a8aed7d964dec1c70d2abd441199f9f37ea1ac",
+  "extraction_status": "extracted",
+  "language": "en",
+  "relevant_pages": "All",
+  "relevant_sections": "HbA1c tests, screening recommendations, lifestyle intervention tracking",
+  "verification_status": "downloaded_verified_tls"
+}

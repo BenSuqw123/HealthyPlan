@@ -1,0 +1,16 @@
+{
+  "source_id": "kdigo_2024_ckd_guideline",
+  "title": "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease",
+  "publisher": "KDIGO",
+  "source_type": "pdf",
+  "original_url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+  "publication_date": "2024-03",
+  "accessed_date": "2026-07-20",
+  "local_file": "ckd/kdigo_2024_ckd_guideline.pdf",
+  "checksum": "b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0",
+  "extraction_status": "extracted",
+  "language": "en",
+  "relevant_pages": "1-200",
+  "relevant_sections": "CKD staging criteria (Chapter 1), nutrition and protein guidance (Chapter 3)",
+  "verification_status": "downloaded_verified_tls"
+}

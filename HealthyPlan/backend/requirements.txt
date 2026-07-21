@@ -1,0 +1,17 @@
+# Core Django framework
+Django==6.0.7
+
+# Django REST API
+djangorestframework==3.17.1
+
+# Cross-Origin Resource Sharing
+django-cors-headers==4.9.0
+
+# OAuth2 provider
+django-oauth-toolkit==3.3.0
+
+# OpenAPI / Swagger / ReDoc
+drf-spectacular==0.30.0
+
+# Filtering for Django REST Framework
+django-filter==26.1

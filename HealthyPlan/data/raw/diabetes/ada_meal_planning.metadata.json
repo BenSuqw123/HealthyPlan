@@ -1,0 +1,16 @@
+{
+  "source_id": "ada_meal_planning",
+  "title": "ADA Meal Planning",
+  "publisher": "American Diabetes Association",
+  "source_type": "html",
+  "original_url": "https://diabetes.org/food-nutrition/meal-planning",
+  "publication_date": "2023-01",
+  "accessed_date": "2026-07-20",
+  "local_file": "diabetes/ada_meal_planning.html",
+  "checksum": "c3929229818d12f1e50df18b66a0a760675e3eb318fc4bc7562599c5f55abaa4",
+  "extraction_status": "extracted",
+  "language": "en",
+  "relevant_pages": "",
+  "relevant_sections": "All general educational content",
+  "verification_status": "downloaded_unverified_tls"
+}

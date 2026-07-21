@@ -1,0 +1,16 @@
+{
+  "source_id": "cdc_diabetes_meal_planning",
+  "title": "Diabetes Meal Planning",
+  "publisher": "CDC",
+  "source_type": "html",
+  "original_url": "https://www.cdc.gov/diabetes/healthy-eating/diabetes-meal-planning.html",
+  "publication_date": "2023-01",
+  "accessed_date": "2026-07-20",
+  "local_file": "diabetes/cdc_diabetes_meal_planning.html",
+  "checksum": "4c1a445a99e7b885f1f163b32a02244e63eff8e368819f156d96a5e0d9e74f17",
+  "extraction_status": "extracted",
+  "language": "en",
+  "relevant_pages": "",
+  "relevant_sections": "All general educational content",
+  "verification_status": "downloaded_unverified_tls"
+}

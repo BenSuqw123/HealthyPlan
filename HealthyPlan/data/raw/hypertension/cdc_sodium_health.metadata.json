@@ -1,0 +1,16 @@
+{
+  "source_id": "cdc_sodium_health",
+  "title": "About Sodium and Health",
+  "publisher": "CDC",
+  "source_type": "html",
+  "original_url": "https://www.cdc.gov/salt/about/index.html",
+  "publication_date": "2023-01",
+  "accessed_date": "2026-07-20",
+  "local_file": "hypertension/cdc_sodium_health.html",
+  "checksum": "5373c22b10efefd34bd7d34086a2d7b0dc605fa56980be6501350af889bad0b7",
+  "extraction_status": "extracted",
+  "language": "en",
+  "relevant_pages": "",
+  "relevant_sections": "All general educational content",
+  "verification_status": "downloaded_unverified_tls"
+}

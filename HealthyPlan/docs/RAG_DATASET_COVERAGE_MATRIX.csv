@@ -1,0 +1,7 @@
+﻿condition_code,router_example_count,knowledge_chunk_count,source_count,eval_question_count,missing_topics,verdict
+chronic_kidney_disease,30,15,4,10,"Stage-specific dietary rules (protein/sodium/potassium changes between stages 1-5 and dialysis), hyperkalemia emergency warnings, food-drug interactions (ACEi/diuretics)",Bare minimum for prototype (Needs review)
+diabetes,30,15,4,10,"Hypoglycemia emergency management (Rule of 15), specific target blood glucose values, insulin/medication-food timing, gestational diabetes guidelines",Usable only for prototype (Needs review)
+gout,30,12,3,10,"Uric acid metric target ranges, detailed acute flare dietary restrictions vs chronic prevention guidelines, allopurinol/colchicine medication interactions",Usable only for prototype (Needs review)
+hypertension,30,12,3,10,"Specific daily sodium/potassium limits (e.g. <2300mg/day), blood pressure classification target ranges (ACC/AHA), hypertensive crisis warning signs",Usable only for prototype (Needs review)
+obesity,30,8,3,10,"Calorie deficits calculations, physical activity progression milestones, weight loss pace targets (0.5-1kg/week), CVD/sleep apnea comorbidities warnings",Too narrow for defense (Needs review)
+prediabetes,30,8,2,10,"Structured lifestyle change program stages, prediabetes progression criteria metrics (HbA1c 5.7-6.4%), prevention target thresholds",Too narrow for defense (Needs review)

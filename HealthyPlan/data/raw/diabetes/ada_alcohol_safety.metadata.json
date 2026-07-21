@@ -1,0 +1,16 @@
+{
+  "source_id": "ada_alcohol_safety",
+  "title": "Alcohol and Diabetes",
+  "publisher": "American Diabetes Association",
+  "source_type": "html",
+  "original_url": "https://diabetes.org/healthy-living/devices-technology/alcohol",
+  "publication_date": "2024-01",
+  "accessed_date": "2026-07-20",
+  "local_file": "diabetes/ada_alcohol_safety.html",
+  "checksum": "87a7048bc66ce385ba4a20986f07d0f45aa14dc2666e79542cfe92b00015807e",
+  "extraction_status": "extracted",
+  "language": "en",
+  "relevant_pages": "All",
+  "relevant_sections": "Alcohol consumption guidelines, delayed hypoglycemia warnings",
+  "verification_status": "downloaded_verified_tls"
+}
