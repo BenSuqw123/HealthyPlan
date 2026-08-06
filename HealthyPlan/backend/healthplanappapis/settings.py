@@ -12,9 +12,13 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 from pathlib import Path
 
+
+import environ
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+env = environ.Env()
+environ.Env.read_env(BASE_DIR / ".env")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
@@ -60,6 +64,12 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'healthplanappapis.urls'
 CORS_ALLOW_ALL_ORIGINS=True
 AUTH_USER_MODEL = 'healthplanapp.User'
+
+OAUTH2_PROVIDER = {
+    "OAUTH2_BACKEND_CLASS": (
+        "oauth2_provider.oauth2_backends.JSONOAuthLibCore"
+    )
+}
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -160,3 +170,6 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CLIENT_ID = env("CLIENT_ID")
+CLIENT_SECRET = env("CLIENT_SECRET")
