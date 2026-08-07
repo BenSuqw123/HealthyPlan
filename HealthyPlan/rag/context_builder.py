@@ -141,24 +141,31 @@ def build_knowledge_context(retrieved_chunks):
 def get_rag_chat_prompt_template():
     system_template = (
         "Bạn là trợ lý tư vấn sức khỏe của hệ thống HealthyPlan.\n\n"
+        "Hồ sơ sức khỏe hiện tại của người dùng:\n"
+        "{health_context}\n\n"
         "Chỉ dẫn an toàn:\n"
         "{safety_instruction_text}\n\n"
         "Kiến thức tham khảo:\n"
         "{knowledge_context}\n\n"
         "Yêu cầu trả lời:\n"
-        "- Trả lời bằng tiếng Việt rõ ràng, dễ hiểu.\n"
-        "- Chỉ sử dụng kiến thức tham khảo được cung cấp.\n"
-        "- Không tự chẩn đoán hoặc khẳng định tình trạng sức khỏe.\n"
-        "- Không tự tạo số liệu hoặc giới hạn dinh dưỡng nếu kiến thức tham khảo không cung cấp.\n"
+        "- Trả lời bằng tiếng Việt rõ ràng, ngắn gọn, đi thẳng vào trọng tâm câu hỏi.\n"
+        "- Mặc định trình bày khoảng 3–6 ý chính. Với câu hỏi thông thường, ưu tiên câu trả lời từ 120–220 từ.\n"
+        "- Không viết phần mở đầu dài dòng và tuyệt đối KHÔNG thêm lời chào hay câu xã giao kết thúc (như 'nếu bạn cần...', 'hy vọng những gợi ý này...').\n"
+        "- Không lặp lại cùng một thông tin ở nhiều đoạn.\n"
+        "- Hồ sơ sức khỏe chỉ là dữ liệu người dùng khai báo, không phải bằng chứng y khoa về nguyên nhân gây bệnh.\n"
+        "- Tuyệt đối KHÔNG sử dụng các từ xưng mang tính gán ghép như 'của bạn', 'ở bạn', 'ảnh hưởng đến bạn' đối với các yếu tố nguy cơ chung (thừa cân, béo phì, ít vận động, ăn muối, stress) trừ khi hồ sơ sức khỏe trực tiếp xác nhận.\n"
+        "- Khi người dùng hỏi nguyên nhân bệnh (CAUSE mode), tách rõ: (1) Các yếu tố nguy cơ/nguyên nhân chung từ tài liệu; (2) Thông tin ghi nhận từ hồ sơ; (3) Kết luận rõ ràng: Hồ sơ hiện tại không có dữ liệu để xác định bạn có các yếu tố nguy cơ này hay không, do đó chưa thể kết luận nguyên nhân cụ thể.\n"
+        "- Cá nhân hóa câu trả lời dựa trên hồ sơ sức khỏe khi thông tin đó liên quan đến câu hỏi (ADVICE mode).\n"
+        "- Không được biến mục tiêu cá nhân (goal, target_weight) hoặc mức vận động (moderate) thành chỉ định hay chẩn đoán y khoa.\n"
+        "- Không tự phân loại BMI hoặc tự tạo số liệu/giới hạn dinh dưỡng nếu kiến thức tham khảo không cung cấp.\n"
         "- Không hướng dẫn tự thay đổi thuốc hoặc liều thuốc.\n"
-        "- Phải xem xét toàn bộ các condition được cung cấp.\n"
         "- Phải tuân thủ các chỉ dẫn an toàn và safety flags.\n"
-        "- Khi thiếu thông tin, phải nói rõ thông tin nào còn thiếu.\n"
-        "- Kết thúc bằng lời khuyên an toàn phù hợp khi có safety flag."
     )
 
     human_template = (
-        "Câu hỏi người dùng:\n"
+        "Lịch sử hội thoại gần nhất:\n"
+        "{conversation_history}\n\n"
+        "Câu hỏi hiện tại của người dùng:\n"
         "{query}\n\n"
         "Thông tin định tuyến:\n"
         "- Primary route: {primary_route}\n"
@@ -174,7 +181,7 @@ def get_rag_chat_prompt_template():
     )
 
 
-def build_llm_prompt(query, conditions, safety_flags, primary_route, safety_instructions, knowledge_context):
+def build_llm_prompt(query, conditions, safety_flags, primary_route, safety_instructions, knowledge_context, health_context="Không có hồ sơ sức khỏe cá nhân.", conversation_history="Không có lịch sử hội thoại trước đó."):
     condition_text = ", ".join(conditions) if conditions else "Không xác định"
     safety_flag_text = ", ".join(safety_flags) if safety_flags else "Không có"
 
@@ -198,6 +205,8 @@ def build_llm_prompt(query, conditions, safety_flags, primary_route, safety_inst
         safety_flag_text=safety_flag_text,
         safety_instruction_text=safety_instruction_text,
         knowledge_context=knowledge_context,
+        health_context=health_context,
+        conversation_history=conversation_history,
     )
 
     return "\n\n".join(

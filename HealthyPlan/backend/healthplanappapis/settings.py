@@ -11,11 +11,17 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+import sys
+
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+PROJECT_DIR = BASE_DIR.parent
+if str(PROJECT_DIR) not in sys.path:
+    sys.path.insert(0, str(PROJECT_DIR))
 
 
 import environ
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
 
 env = environ.Env()
 environ.Env.read_env(BASE_DIR / ".env")
@@ -65,11 +71,7 @@ ROOT_URLCONF = 'healthplanappapis.urls'
 CORS_ALLOW_ALL_ORIGINS=True
 AUTH_USER_MODEL = 'healthplanapp.User'
 
-OAUTH2_PROVIDER = {
-    "OAUTH2_BACKEND_CLASS": (
-        "oauth2_provider.oauth2_backends.JSONOAuthLibCore"
-    )
-}
+OAUTH2_PROVIDER = {}
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

@@ -1,0 +1,321 @@
+﻿example_id,query,condition_code,language,example_type,source_chunk_ids,review_status,notes
+router_ckd_dialysis_001,Khuyến nghị về lượng kali đối với người bệnh chạy thận chu kỳ được tính toán như thế nào?,ckd_dialysis,vi,nutrition,ckd_dialysis_004,auto_validated,nutrition intent
+router_ckd_dialysis_002,Khả năng đào thải nước và chất tan diễn ra liên tục ở người bệnh lọc màng bụng chu kỳ ra sao?,ckd_dialysis,vi,direct_condition,ckd_dialysis_009,auto_validated,explicit diagnosis
+router_ckd_dialysis_003,Sự khác biệt về nguy cơ mất kali giữa các bệnh nhân chạy thận nhân tạo khác nhau?,ckd_dialysis,vi,symptom_context,ckd_dialysis_010,auto_validated,treatment context
+router_ckd_dialysis_004,Các phương pháp điều trị thay thế thận bao gồm lọc màng bụng và chạy thận nhân tạo được thực hiện khi nào?,ckd_dialysis,vi,direct_condition,medquad_ckd_dialysis_001,auto_validated,explicit diagnosis
+router_ckd_dialysis_005,Làm thế nào để cá nhân hóa lượng dịch uống cho người chạy thận dựa trên lượng nước tiểu còn lại và cân nặng khô?,ckd_dialysis,vi,measurement,medquad_ckd_dialysis_002,auto_validated,measurement context
+router_ckd_dialysis_006,Tại sao phốt pho máu cao kéo dài ở người chạy thận lại gây ngứa da và làm yếu xương?,ckd_dialysis,vi,symptom_context,medquad_ckd_dialysis_004,auto_validated,treatment context
+router_ckd_dialysis_007,Tại sao nhu cầu protein của người chạy thận nhân tạo lại cao hơn so với giai đoạn trước khi lọc máu?,ckd_dialysis,vi,nutrition,medquad_ckd_dialysis_005,auto_validated,nutrition intent
+router_ckd_dialysis_008,Tại sao ăn nhiều muối natri lại làm tăng khát và gây quá tải tuần hoàn giữa các buổi chạy thận?,ckd_dialysis,vi,nutrition,medquad_ckd_dialysis_006,auto_validated,nutrition intent
+router_ckd_dialysis_009,Quy trình sử dụng dịch lọc qua catheter vào ổ bụng để hấp thu chất thải trong lọc màng bụng?,ckd_dialysis,vi,direct_condition,medquad_ckd_dialysis_007,auto_validated,explicit diagnosis
+router_ckd_dialysis_010,Các triệu chứng cảnh báo biến chứng viêm phúc mạc nguy hiểm ở bệnh nhân lọc màng bụng?,ckd_dialysis,vi,symptom_context,medquad_ckd_dialysis_008,auto_validated,treatment context
+router_ckd_dialysis_011,Nguyên nhân gây ngứa da ở người đang chạy thận nhân tạo và các biện pháp giảm ngứa?,ckd_dialysis,vi,symptom_context,vihealthqa_ckd_dialysis_0001,auto_validated,treatment context
+router_ckd_dialysis_012,Lọc màng bụng chu kỳ có ưu thế gì về chế độ ăn uống so với chạy thận nhân tạo?,ckd_dialysis,vi,nutrition,ckd_dialysis_009,auto_validated,nutrition intent
+router_ckd_dialysis_013,Tại sao lượng dịch đưa vào cơ thể người chạy thận cần kiểm soát chặt chẽ dựa trên cân nặng khô?,ckd_dialysis,vi,measurement,medquad_ckd_dialysis_002,auto_validated,measurement context
+router_ckd_dialysis_014,Tác hại của việc để nồng độ kali trong máu tăng quá cao giữa các lần lọc máu chu kỳ?,ckd_dialysis,vi,medication_safety,medquad_ckd_dialysis_003,auto_validated,medication safety intent
+router_ckd_dialysis_015,Chế độ ăn giàu đạm giúp người chạy thận nhân tạo bù đắp lượng protein bị mất như thế nào?,ckd_dialysis,vi,nutrition,medquad_ckd_dialysis_005,auto_validated,nutrition intent
+router_ckd_dialysis_016,Khi nào dịch tháo ra bị đục ở người bệnh lọc màng bụng cần liên hệ khẩn cấp với bác sĩ?,ckd_dialysis,vi,symptom_context,medquad_ckd_dialysis_008,auto_validated,treatment context
+router_ckd_dialysis_017,dang loc mang bung chu ky thi an kieng the nao,ckd_dialysis,vi,nutrition,ckd_dialysis_009,auto_validated,accentless variation
+router_ckd_dialysis_018,vi sao nguoi chay than nhan tao lai hay bi ngua da,ckd_dialysis,vi,symptom_context,vihealthqa_ckd_dialysis_0001,auto_validated,accentless variation
+router_ckd_dialysis_019,nguoi chay than kieng gi,ckd_dialysis,vi,nutrition,medquad_ckd_dialysis_006,auto_validated,short colloquial query
+router_ckd_dialysis_020,loc mang bung bi dau bung,ckd_dialysis,vi,symptom_context,medquad_ckd_dialysis_008,auto_validated,short colloquial query
+router_ckd_g1_001,Chức năng lọc của cầu thận được đánh giá như thế nào ở giai đoạn suy thận mạn G1?,ckd_g1,vi,direct_condition,ckd_g1_001,auto_validated,explicit diagnosis
+router_ckd_g1_002,Tại sao chẩn đoán suy thận giai đoạn G1 lại cần thêm bằng chứng tổn thương thận kéo dài trên 3 tháng?,ckd_g1,vi,direct_condition,ckd_g1_002,auto_validated,explicit diagnosis
+router_ckd_g1_003,Tần suất thực hiện xét nghiệm nước tiểu và máu định kỳ cho người bệnh thận mạn giai đoạn 1?,ckd_g1,vi,measurement,ckd_g1_003,auto_validated,measurement context
+router_ckd_g1_004,Bệnh nhân suy thận giai đoạn G1 có phải hạn chế ăn đạm hay kiêng kali nghiêm ngặt hay chưa?,ckd_g1,vi,nutrition,ckd_g1_004,auto_validated,nutrition intent
+router_ckd_g1_005,Tại sao việc đánh giá chuyên khoa thận ban đầu lại quan trọng đối với người bệnh CKD G1?,ckd_g1,vi,direct_condition,ckd_g1_005,auto_validated,treatment context
+router_ckd_g1_006,Mối liên quan giữa kiểm soát đường huyết chặt chẽ và khả năng bảo vệ cầu thận ở người bị CKD G1?,ckd_g1,vi,direct_condition,ckd_g1_006,auto_validated,explicit diagnosis
+router_ckd_g1_007,Người bệnh thận mạn giai đoạn G1 có cần kiêng chất béo bão hòa từ mỡ động vật không?,ckd_g1,vi,food_restriction,ckd_g1_007,auto_validated,food restriction intent
+router_ckd_g1_008,Lượng nước lọc cần bổ sung mỗi ngày đối với người bệnh thận mạn giai đoạn G1 là bao nhiêu?,ckd_g1,vi,nutrition,ckd_g1_008,auto_validated,nutrition intent
+router_ckd_g1_009,eGFR trên 90 kèm theo albumin niệu dương tính có phải là suy thận giai đoạn 1 không?,ckd_g1,vi,direct_condition,ckd_g1_002,auto_validated,explicit diagnosis
+router_ckd_g1_010,Chế độ ăn nhạt giảm muối hỗ trợ như thế nào cho người bệnh thận mạn giai đoạn G1?,ckd_g1,vi,nutrition,ckd_g1_004,auto_validated,nutrition intent
+router_ckd_g1_011,Người suy thận giai đoạn 1 nên xét nghiệm creatinine máu và tổng phân tích nước tiểu bao lâu một lần?,ckd_g1,vi,measurement,ckd_g1_003,auto_validated,measurement context
+router_ckd_g1_012,Tại sao kiểm soát huyết áp tối ưu lại giúp làm chậm tiến triển bệnh thận mạn giai đoạn G1?,ckd_g1,vi,direct_condition,ckd_g1_006,auto_validated,explicit diagnosis
+router_ckd_g1_013,Hạn chế mỡ động vật giúp bảo vệ mạch máu thận ở bệnh nhân CKD G1 ra sao?,ckd_g1,vi,food_restriction,ckd_g1_007,auto_validated,food restriction intent
+router_ckd_g1_014,Tại sao người bệnh thận mạn giai đoạn 1 cần uống đủ từ 1.5 đến 2 lít nước mỗi ngày?,ckd_g1,vi,nutrition,ckd_g1_008,auto_validated,nutrition intent
+router_ckd_g1_015,Mục tiêu điều trị chính cho người mới phát hiện bị bệnh thận mạn giai đoạn G1 là gì?,ckd_g1,vi,direct_condition,ckd_g1_005,auto_validated,treatment context
+router_ckd_g1_016,Các khuyến nghị về lối sống lành mạnh để phòng ngừa suy giảm eGFR ở người bệnh CKD G1?,ckd_g1,vi,lifestyle,ckd_g1_004,auto_validated,lifestyle intent
+router_ckd_g1_017,eGFR tren 90 va albumin nieu cao co phai la suy than giai doan 1,ckd_g1,vi,direct_condition,ckd_g1_002,auto_validated,accentless variation
+router_ckd_g1_018,luong nuoc uong hang ngay cho nguoi suy than giai doan G1,ckd_g1,vi,nutrition,ckd_g1_008,auto_validated,accentless variation
+router_ckd_g1_019,suy than do 1 kieng gi,ckd_g1,vi,nutrition,ckd_g1_004,auto_validated,short colloquial query
+router_ckd_g1_020,uong nuoc o benh than do 1,ckd_g1,vi,nutrition,ckd_g1_008,auto_validated,short colloquial query
+router_ckd_g2_001,Chức năng lọc của cầu thận giảm nhẹ ở mức eGFR bao nhiêu đối với người bị CKD G2?,ckd_g2,vi,direct_condition,ckd_g2_001,auto_validated,explicit diagnosis
+router_ckd_g2_002,Tại sao chỉ số eGFR từ 60-89 ở người cao tuổi đơn thuần chưa đủ để kết luận suy thận giai đoạn G2?,ckd_g2,vi,direct_condition,ckd_g2_002,auto_validated,explicit diagnosis
+router_ckd_g2_003,Người bệnh thận mạn giai đoạn G2 cần thực hiện các xét nghiệm định kỳ nào để theo dõi tiến triển?,ckd_g2,vi,measurement,ckd_g2_003,auto_validated,measurement context
+router_ckd_g2_004,Tại sao đái tháo đường và tăng huyết áp lại là hai nguyên nhân hàng đầu làm suy giảm chức năng thận ở giai đoạn G2?,ckd_g2,vi,direct_condition,ckd_g2_004,auto_validated,explicit diagnosis
+router_ckd_g2_005,Những nhóm thuốc nào có nguy cơ gây độc cho thận mà người bệnh CKD G2 cần tuyệt đối tránh?,ckd_g2,vi,medication_safety,ckd_g2_005,auto_validated,medication safety intent
+router_ckd_g2_006,Mục tiêu kiểm soát huyết áp theo khuyến nghị KDIGO cho bệnh nhân suy thận giai đoạn G2 kèm cao huyết áp?,ckd_g2,vi,direct_condition,ckd_g2_006,auto_validated,explicit diagnosis
+router_ckd_g2_007,Nguy cơ lạm dụng thuốc đông y hoặc thảo dược khô đối với bệnh nhân suy thận giai đoạn 2 là gì?,ckd_g2,vi,medication_safety,ckd_g2_007,auto_validated,medication safety intent
+router_ckd_g2_008,Chế độ luyện tập thể dục thể thao phù hợp cho người bệnh thận mạn giai đoạn G2?,ckd_g2,vi,exercise,ckd_g2_008,auto_validated,exercise intent
+router_ckd_g2_009,eGFR từ 60 đến 89 mL/phút/1.73m2 có ý nghĩa gì đối với chẩn đoán bệnh thận mạn giai đoạn G2?,ckd_g2,vi,direct_condition,ckd_g2_001,auto_validated,explicit diagnosis
+router_ckd_g2_010,Bệnh nhân suy thận giai đoạn G2 cần theo dõi nồng độ protein trong nước tiểu định kỳ thế nào?,ckd_g2,vi,measurement,ckd_g2_003,auto_validated,measurement context
+router_ckd_g2_011,Tại sao kiểm soát đường huyết tối ưu lại đặc biệt quan trọng để ngăn ngừa tổn thương thận tiến triển ở giai đoạn G2?,ckd_g2,vi,direct_condition,ckd_g2_004,auto_validated,explicit diagnosis
+router_ckd_g2_012,Các thuốc kháng viêm giảm đau không kê đơn có an toàn cho người bệnh thận mạn giai đoạn G2 hay không?,ckd_g2,vi,medication_safety,ckd_g2_005,auto_validated,medication safety intent
+router_ckd_g2_013,Huyết áp mục tiêu tối đa cho người bệnh CKD G2 để bảo tồn chức năng thận?,ckd_g2,vi,direct_condition,ckd_g2_006,auto_validated,treatment context
+router_ckd_g2_014,Tại sao thảo dược khô chưa rõ nguồn gốc lại dễ gây suy thận cấp tiến triển ở giai đoạn G2?,ckd_g2,vi,medication_safety,ckd_g2_007,auto_validated,medication safety intent
+router_ckd_g2_015,Người bệnh thận mạn giai đoạn 2 nên tập thể dục nhẹ nhàng bao nhiêu phút mỗi ngày?,ckd_g2,vi,exercise,ckd_g2_008,auto_validated,exercise intent
+router_ckd_g2_016,Người già có eGFR bằng 75 nhưng không có tổn thương thận thì có bị coi là suy thận giai đoạn G2 không?,ckd_g2,vi,direct_condition,ckd_g2_002,auto_validated,explicit diagnosis
+router_ckd_g2_017,eGFR tu 60 den 89 co phai la suy than giai doan G2 khong,ckd_g2,vi,direct_condition,ckd_g2_001,auto_validated,accentless variation
+router_ckd_g2_018,thuoc doc than can tranh cho nguoi suy than do 2,ckd_g2,vi,medication_safety,ckd_g2_005,auto_validated,accentless variation
+router_ckd_g2_019,suy than do 2 kieng gi,ckd_g2,vi,direct_condition,ckd_g2_005,auto_validated,short colloquial query
+router_ckd_g2_020,tap the duc cho nguoi suy than do 2,ckd_g2,vi,exercise,ckd_g2_008,auto_validated,short colloquial query
+router_ckd_g3a_001,Chức năng lọc của thận bị giảm ở mức độ nhẹ đến trung bình với eGFR bao nhiêu ở giai đoạn G3a?,ckd_g3a,vi,direct_condition,ckd_g3a_001,auto_validated,explicit diagnosis
+router_ckd_g3a_002,Tại sao bệnh nhân suy thận giai đoạn G3a bắt buộc phải hạn chế muối natri dưới 2000mg mỗi ngày?,ckd_g3a,vi,nutrition,ckd_g3a_003,auto_validated,nutrition intent
+router_ckd_g3a_003,Người bệnh thận mạn giai đoạn G3a có cần áp dụng thực đơn kiêng kali một cách tuyệt đối không?,ckd_g3a,vi,nutrition,ckd_g3a_004,auto_validated,nutrition intent
+router_ckd_g3a_004,Tại sao phốt pho vô cơ trong chất bảo quản thực phẩm đóng hộp lại nguy hại cho người bị CKD G3a?,ckd_g3a,vi,food_restriction,ckd_g3a_005,auto_validated,food restriction intent
+router_ckd_g3a_005,Mức độ quan trọng của việc đồng quản lý tiểu đường và huyết áp ở giai đoạn suy thận G3a?,ckd_g3a,vi,direct_condition,ckd_g3a_006,auto_validated,treatment context
+router_ckd_g3a_006,Bệnh nhân thận mạn giai đoạn G3a cần theo dõi chức năng lọc cầu thận tối thiểu mấy lần mỗi năm?,ckd_g3a,vi,measurement,ckd_g3a_007,auto_validated,measurement context
+router_ckd_g3a_007,Tác hại của các loại phụ gia phốt pho có trong nước ngọt đối với người bị CKD G3a?,ckd_g3a,vi,food_restriction,ckd_g3a_009,auto_validated,food restriction intent
+router_ckd_g3a_008,Hiện tượng thiếu máu do giảm sản xuất hormone erythropoietin có thể bắt đầu ở giai đoạn CKD G3a không?,ckd_g3a,vi,symptom_context,ckd_g3a_010,auto_validated,treatment context
+router_ckd_g3a_009,Tại sao người bệnh suy thận giai đoạn G3a phải tránh các loại thuốc cản quang có chứa i-ốt?,ckd_g3a,vi,medication_safety,ckd_g3a_011,auto_validated,medication safety intent
+router_ckd_g3a_010,Chỉ số eGFR nằm trong khoảng 45 đến 59 chỉ ra suy thận giai đoạn mấy và cần làm gì?,ckd_g3a,vi,direct_condition,ckd_g3a_001,auto_validated,explicit diagnosis
+router_ckd_g3a_011,"Người bệnh CKD G3a cần lưu ý gì khi ăn các thực phẩm giàu muối như dưa muối, mắm tôm?",ckd_g3a,vi,food_restriction,ckd_g3a_003,auto_validated,food restriction intent
+router_ckd_g3a_012,Làm thế nào để cá nhân hóa lượng kali nạp vào cho bệnh nhân suy thận giai đoạn 3a?,ckd_g3a,vi,nutrition,ckd_g3a_004,auto_validated,nutrition intent
+router_ckd_g3a_013,Xét nghiệm máu định kỳ kiểm tra kali máu cho bệnh nhân CKD G3a bao lâu một lần?,ckd_g3a,vi,measurement,ckd_g3a_007,auto_validated,measurement context
+router_ckd_g3a_014,Tại sao chụp CT cắt lớp có cản quang lại bị hạn chế đối với người suy thận độ 3a?,ckd_g3a,vi,medication_safety,ckd_g3a_011,auto_validated,medication safety intent
+router_ckd_g3a_015,Chế độ kiểm soát đường huyết tối ưu cho người bệnh đái tháo đường đã tiến triển sang CKD G3a?,ckd_g3a,vi,direct_condition,ckd_g3a_006,auto_validated,treatment context
+router_ckd_g3a_016,Phụ gia phốt pho vô cơ ẩn giấu trong thực phẩm nào mà người suy thận 3a cần tránh?,ckd_g3a,vi,food_restriction,ckd_g3a_009,auto_validated,food restriction intent
+router_ckd_g3a_017,eGFR tu 45 den 59 co phai suy than giai doan 3a khong,ckd_g3a,vi,direct_condition,ckd_g3a_001,auto_validated,accentless variation
+router_ckd_g3a_018,vi sao nguoi benh suy than do 3a can kieng muoi natri,ckd_g3a,vi,nutrition,ckd_g3a_003,auto_validated,accentless variation
+router_ckd_g3a_019,suy than do 3a kieng gi,ckd_g3a,vi,nutrition,ckd_g3a_005,auto_validated,short colloquial query
+router_ckd_g3a_020,eGFR cho suy than do 3a,ckd_g3a,vi,measurement,ckd_g3a_007,auto_validated,short colloquial query
+router_ckd_g3b_001,Chức năng lọc của thận bị suy giảm mức độ trung bình đến nặng với chỉ số eGFR bao nhiêu ở giai đoạn G3b?,ckd_g3b,vi,direct_condition,ckd_g3b_001,auto_validated,explicit diagnosis
+router_ckd_g3b_002,Tại sao người bệnh thận mạn giai đoạn G3b cần hạn chế natri nghiêm ngặt dưới 2g mỗi ngày?,ckd_g3b,vi,nutrition,ckd_g3b_003,auto_validated,nutrition intent
+router_ckd_g3b_003,Khi nồng độ kali trong máu vượt ngưỡng an toàn ở bệnh nhân CKD G3b thì cần kiêng những gì?,ckd_g3b,vi,nutrition,ckd_g3b_004,auto_validated,nutrition intent
+router_ckd_g3b_004,Tại sao người bệnh suy thận giai đoạn G3b cần bắt đầu hạn chế phốt pho từ thực phẩm tự nhiên?,ckd_g3b,vi,food_restriction,ckd_g3b_005,auto_validated,food restriction intent
+router_ckd_g3b_005,Tần suất theo dõi y khoa định kỳ tối thiểu mỗi năm cho người bệnh thận mạn giai đoạn G3b?,ckd_g3b,vi,measurement,ckd_g3b_006,auto_validated,measurement context
+router_ckd_g3b_006,Tại sao việc làm việc với chuyên gia dinh dưỡng tiết chế lại cần thiết ở giai đoạn suy thận G3b?,ckd_g3b,vi,direct_condition,ckd_g3b_007,auto_validated,treatment context
+router_ckd_g3b_007,Các dấu hiệu cho thấy nồng độ kali trong máu của người bệnh CKD G3b tăng cao quá mức?,ckd_g3b,vi,symptom_context,ckd_g3b_009,auto_validated,treatment context
+router_ckd_g3b_008,Tại sao bệnh nhân thận mạn giai đoạn G3b thường bị giảm hấp thu canxi do thiếu hụt vitamin D hoạt tính?,ckd_g3b,vi,direct_condition,ckd_g3b_010,auto_validated,explicit diagnosis
+router_ckd_g3b_009,Tại sao bác sĩ cần rà soát và điều chỉnh liều lượng thuốc metformin đang dùng của bệnh nhân suy thận G3b?,ckd_g3b,vi,medication_safety,ckd_g3b_011,auto_validated,medication safety intent
+router_ckd_g3b_010,eGFR từ 30 đến 44 chỉ ra tình trạng suy thận giai đoạn mấy và nguy cơ của nó?,ckd_g3b,vi,direct_condition,ckd_g3b_001,auto_validated,explicit diagnosis
+router_ckd_g3b_011,Người bị suy thận giai đoạn 3b có cần kiêng hoàn toàn các loại trái cây nhiều kali không?,ckd_g3b,vi,nutrition,ckd_g3b_004,auto_validated,nutrition intent
+router_ckd_g3b_012,Phốt pho tự nhiên trong thực phẩm nào mà người bệnh CKD G3b cần bắt đầu cắt giảm?,ckd_g3b,vi,food_restriction,ckd_g3b_005,auto_validated,food restriction intent
+router_ckd_g3b_013,Xét nghiệm máu định kỳ kiểm tra kali và calci cho bệnh nhân suy thận giai đoạn G3b bao lâu một lần?,ckd_g3b,vi,measurement,ckd_g3b_006,auto_validated,measurement context
+router_ckd_g3b_014,Tại sao thiếu hụt vitamin D hoạt tính lại ảnh hưởng đến xương của người bệnh CKD G3b?,ckd_g3b,vi,direct_condition,ckd_g3b_010,auto_validated,explicit diagnosis
+router_ckd_g3b_015,Rà soát điều chỉnh các thuốc thải qua thận đối với bệnh nhân suy thận giai đoạn 3b?,ckd_g3b,vi,medication_safety,ckd_g3b_011,auto_validated,medication safety intent
+router_ckd_g3b_016,Chế độ ăn giảm natri nghiêm ngặt dưới 5g muối ăn mỗi ngày cho người bệnh CKD G3b?,ckd_g3b,vi,nutrition,ckd_g3b_003,auto_validated,nutrition intent
+router_ckd_g3b_017,eGFR tu 30 den 44 co phai suy than giai doan 3b khong,ckd_g3b,vi,direct_condition,ckd_g3b_001,auto_validated,accentless variation
+router_ckd_g3b_018,tai sao suy than do 3b can chinh lieu thuoc metformin,ckd_g3b,vi,medication_safety,ckd_g3b_011,auto_validated,accentless variation
+router_ckd_g3b_019,suy than do 3b kieng gi,ckd_g3b,vi,nutrition,ckd_g3b_005,auto_validated,short colloquial query
+router_ckd_g3b_020,metformin cho suy than do 3b,ckd_g3b,vi,medication_safety,ckd_g3b_011,auto_validated,short colloquial query
+router_ckd_g4_001,Chức năng lọc của thận bị suy giảm nghiêm trọng với eGFR bao nhiêu ở giai đoạn CKD G4?,ckd_g4,vi,direct_condition,ckd_g4_001,auto_validated,explicit diagnosis
+router_ckd_g4_002,Nguyên tắc hạn chế natri dưới 2000mg mỗi ngày có vai trò gì đối với người bệnh CKD G4?,ckd_g4,vi,nutrition,ckd_g4_003,auto_validated,nutrition intent
+router_ckd_g4_003,Nguy cơ tăng kali máu đe dọa tính mạng gây loạn nhịp tim ở bệnh nhân suy thận giai đoạn G4?,ckd_g4,vi,symptom_context,ckd_g4_004,auto_validated,treatment context
+router_ckd_g4_004,Tại sao kiểm soát lượng phốt pho nạp vào lại cực kỳ quan trọng đối với người bệnh CKD G4?,ckd_g4,vi,food_restriction,ckd_g4_005,auto_validated,food restriction intent
+router_ckd_g4_005,Làm thế nào để cá nhân hóa lượng nước uống hàng ngày cho bệnh nhân suy thận giai đoạn G4?,ckd_g4,vi,nutrition,ckd_g4_006,auto_validated,nutrition intent
+router_ckd_g4_006,Tại sao người bệnh CKD G4 cần chuẩn bị trước kế hoạch và thông tin điều trị thay thế thận?,ckd_g4,vi,direct_condition,ckd_g4_007,auto_validated,treatment context
+router_ckd_g4_007,Lợi ích của việc chuyển gửi sớm bệnh nhân CKD G4 đến bác sĩ chuyên khoa thận học?,ckd_g4,vi,direct_condition,ckd_g4_008,auto_validated,treatment context
+router_ckd_g4_008,Hiện tượng toan chuyển hóa do giảm thải axit qua nước tiểu ở giai đoạn suy thận G4 là gì?,ckd_g4,vi,symptom_context,ckd_g4_009,auto_validated,treatment context
+router_ckd_g4_009,Tại sao bệnh nhân suy thận giai đoạn G4 được khuyến nghị tiêm phòng viêm gan B từ sớm?,ckd_g4,vi,medication_safety,ckd_g4_010,auto_validated,medication safety intent
+router_ckd_g4_010,Làm thế nào để bảo vệ các tĩnh mạch ở vùng cổ tay và cánh tay cho người bệnh CKD G4?,ckd_g4,vi,direct_condition,ckd_g4_011,auto_validated,treatment context
+router_ckd_g4_011,Tại sao tần suất theo dõi nồng độ kali trong máu ở giai đoạn suy thận G4 cần được tăng lên?,ckd_g4,vi,measurement,ckd_g4_012,auto_validated,measurement context
+router_ckd_g4_012,Rối loạn khoáng chất xương CKD-MBD gây đau nhức xương khớp ở người bệnh G4 thế nào?,ckd_g4,vi,symptom_context,ckd_g4_013,auto_validated,treatment context
+router_ckd_g4_013,Chỉ số eGFR nằm trong khoảng 15 đến 29 biểu thị suy thận giai đoạn mấy và cần lưu ý gì?,ckd_g4,vi,direct_condition,ckd_g4_001,auto_validated,explicit diagnosis
+router_ckd_g4_014,Người bệnh suy thận độ 4 cần kiêng những thực phẩm giàu phốt pho nào để tránh ngứa da?,ckd_g4,vi,food_restriction,ckd_g4_005,auto_validated,food restriction intent
+router_ckd_g4_015,Tính toán lượng nước uống hàng ngày dựa trên các yếu tố lâm sàng nào cho người bệnh CKD G4?,ckd_g4,vi,measurement,ckd_g4_006,auto_validated,measurement context
+router_ckd_g4_016,Tại sao việc tiêm phòng viêm gan B lại hiệu quả hơn khi được thực hiện từ giai đoạn CKD G4?,ckd_g4,vi,medication_safety,ckd_g4_010,auto_validated,medication safety intent
+router_ckd_g4_017,eGFR tu 15 den 29 co phai suy than giai doan 4 khong,ckd_g4,vi,direct_condition,ckd_g4_001,auto_validated,accentless variation
+router_ckd_g4_018,bao ve tinh mach tay de lam cau noi chay than cho nguoi do 4,ckd_g4,vi,direct_condition,ckd_g4_011,auto_validated,accentless variation
+router_ckd_g4_019,suy than do 4 kieng gi,ckd_g4,vi,nutrition,ckd_g4_005,auto_validated,short colloquial query
+router_ckd_g4_020,nuoc uong cho suy than do 4,ckd_g4,vi,nutrition,ckd_g4_006,auto_validated,short colloquial query
+router_ckd_g5_non_dialysis_001,Chẩn đoán bệnh thận mạn giai đoạn G5 chưa lọc máu dựa trên mức eGFR dưới bao nhiêu?,ckd_g5_non_dialysis,vi,direct_condition,ckd_g5_nondialysis_001,auto_validated,explicit diagnosis
+router_ckd_g5_non_dialysis_002,Tại sao người bệnh suy thận giai đoạn 5 chưa chạy thận cần hạn chế natri nghiêm ngặt dưới 2g/ngày?,ckd_g5_non_dialysis,vi,nutrition,ckd_g5_nondialysis_003,auto_validated,nutrition intent
+router_ckd_g5_non_dialysis_003,Biến chứng tăng kali máu nguy hiểm như thế nào đối với người bệnh CKD G5 chưa lọc máu?,ckd_g5_non_dialysis,vi,symptom_context,ckd_g5_nondialysis_004,auto_validated,treatment context
+router_ckd_g5_non_dialysis_004,Mục đích hạn chế phốt pho ở bệnh nhân suy thận giai đoạn G5 chưa chạy thận là để kiểm soát bệnh gì?,ckd_g5_non_dialysis,vi,direct_condition,ckd_g5_nondialysis_005,auto_validated,explicit diagnosis
+router_ckd_g5_non_dialysis_005,Làm thế nào để đo lường lượng nước tiểu hàng ngày nhằm tính lượng nước uống ở giai đoạn G5 chưa chạy thận?,ckd_g5_non_dialysis,vi,measurement,ckd_g5_nondialysis_006,auto_validated,measurement context
+router_ckd_g5_non_dialysis_006,Tại sao người bệnh CKD G5 chưa lọc máu cần được giám sát y khoa cực kỳ chặt chẽ bởi bác sĩ thận?,ckd_g5_non_dialysis,vi,direct_condition,ckd_g5_nondialysis_007,auto_validated,treatment context
+router_ckd_g5_non_dialysis_007,Dấu hiệu quá tải nước nặng đòi hỏi bệnh nhân suy thận độ 5 chưa chạy thận nhập viện ngay lập tức?,ckd_g5_non_dialysis,vi,symptom_context,ckd_g5_nondialysis_008,auto_validated,treatment context
+router_ckd_g5_non_dialysis_008,Cách phối hợp giữa chế độ ăn nhạt và sử dụng thuốc gắn phốt pho cho người CKD G5 chưa lọc máu?,ckd_g5_non_dialysis,vi,medication_safety,ckd_g5_nondialysis_010,auto_validated,medication safety intent
+router_ckd_g5_non_dialysis_009,Tại sao người bệnh suy thận giai đoạn 5 chưa chạy thận cần kiêng tuyệt đối phốt pho từ phụ gia vô cơ?,ckd_g5_non_dialysis,vi,food_restriction,ckd_g5_nondialysis_011,auto_validated,food restriction intent
+router_ckd_g5_non_dialysis_010,Hiện tượng buồn nôn và chán ăn do urê huyết cao biểu hiện ở người bệnh CKD G5 chưa lọc máu thế nào?,ckd_g5_non_dialysis,vi,symptom_context,ckd_g5_nondialysis_012,auto_validated,treatment context
+router_ckd_g5_non_dialysis_011,Tại sao cần dừng hoặc thay đổi các thuốc hạ đường huyết thải qua thận ở người CKD G5 chưa chạy thận?,ckd_g5_non_dialysis,vi,medication_safety,ckd_g5_nondialysis_013,auto_validated,medication safety intent
+router_ckd_g5_non_dialysis_012,Lượng nước uống cho phép mỗi ngày tính theo lượng nước tiểu của người bệnh suy thận độ 5 chưa chạy thận?,ckd_g5_non_dialysis,vi,measurement,ckd_g5_nondialysis_006,auto_validated,measurement context
+router_ckd_g5_non_dialysis_013,Hạn chế đạm ở mức độ nào là an toàn cho bệnh nhân suy thận giai đoạn G5 chưa lọc máu để tránh suy dinh dưỡng?,ckd_g5_non_dialysis,vi,nutrition,ckd_g5_nondialysis_001,auto_validated,nutrition intent
+router_ckd_g5_non_dialysis_014,Tại sao phụ gia phốt pho vô cơ lại hấp thu nhanh hơn phốt pho hữu cơ ở người bệnh CKD G5 chưa chạy thận?,ckd_g5_non_dialysis,vi,food_restriction,ckd_g5_nondialysis_011,auto_validated,food restriction intent
+router_ckd_g5_non_dialysis_015,Làm thế nào để phát hiện sớm triệu chứng tích tụ độc tố ure huyết cao ở bệnh nhân suy thận giai đoạn 5 chưa lọc máu?,ckd_g5_non_dialysis,vi,symptom_context,ckd_g5_nondialysis_012,auto_validated,treatment context
+router_ckd_g5_non_dialysis_016,Vai trò của bác sĩ thận học trong việc theo dõi chức năng tim mạch cho bệnh nhân CKD G5 chưa lọc máu?,ckd_g5_non_dialysis,vi,direct_condition,ckd_g5_nondialysis_007,auto_validated,treatment context
+router_ckd_g5_non_dialysis_017,suy than giai doan 5 chua loc mau can kieng kali the nao,ckd_g5_non_dialysis,vi,nutrition,ckd_g5_nondialysis_004,auto_validated,accentless variation
+router_ckd_g5_non_dialysis_018,trieu chung qua tai nuoc o nguoi suy than do 5 chua chay than,ckd_g5_non_dialysis,vi,symptom_context,ckd_g5_nondialysis_008,auto_validated,accentless variation
+router_ckd_g5_non_dialysis_019,suy than do 5 chua chay than,ckd_g5_non_dialysis,vi,direct_condition,ckd_g5_nondialysis_001,auto_validated,short colloquial query
+router_ckd_g5_non_dialysis_020,uong nuoc o nguoi suy than do 5 chua loc mau,ckd_g5_non_dialysis,vi,nutrition,ckd_g5_nondialysis_006,auto_validated,short colloquial query
+router_ckd_stage_unknown_001,Chế độ dinh dưỡng tổng quát cho người mới được chẩn đoán mắc bệnh thận mạn nhưng chưa rõ giai đoạn?,ckd_stage_unknown,vi,direct_condition,ckd_unknown_001,auto_validated,explicit diagnosis
+router_ckd_stage_unknown_002,Tại sao nhu cầu kiêng khem đạm và kali lại khác biệt rất lớn giữa các giai đoạn bệnh thận mạn?,ckd_stage_unknown,vi,nutrition,ckd_unknown_002,auto_validated,nutrition intent
+router_ckd_stage_unknown_003,Người bệnh thận mạn chưa rõ giai đoạn cần làm thêm xét nghiệm gì để tính toán mức lọc cầu thận eGFR?,ckd_stage_unknown,vi,direct_condition,ckd_unknown_003,auto_validated,treatment context
+router_ckd_stage_unknown_004,Tại sao hệ thống khuyên tránh tự ý kiêng đạm hay kali khi chưa xác định được giai đoạn suy thận?,ckd_stage_unknown,vi,nutrition,ckd_unknown_004,auto_validated,nutrition intent
+router_ckd_stage_unknown_005,Làm thế nào để nhận biết chỉ số creatinine máu đơn thuần thay đổi theo tuổi và khối lượng cơ?,ckd_stage_unknown,vi,measurement,ckd_unknown_006,auto_validated,measurement context
+router_ckd_stage_unknown_006,Tại sao người mắc bệnh thận mạn chưa rõ giai đoạn cần tuyệt đối tránh các thuốc giảm đau kháng viêm NSAID?,ckd_stage_unknown,vi,medication_safety,ckd_unknown_007,auto_validated,medication safety intent
+router_ckd_stage_unknown_007,Bệnh thận mạn là tình trạng tổn thương thận kéo dài như thế nào và tác động của nó đến cơ thể?,ckd_stage_unknown,vi,direct_condition,medquad_ckd_001,auto_validated,explicit diagnosis
+router_ckd_stage_unknown_008,Tại sao bệnh thận mạn thường tiến triển âm thầm và không gây ra triệu chứng ở các giai đoạn đầu?,ckd_stage_unknown,vi,symptom_context,medquad_ckd_002,auto_validated,treatment context
+router_ckd_stage_unknown_009,Tập luyện và duy trì cân nặng giúp ích gì trong việc kiểm soát tiến triển của bệnh thận mạn nói chung?,ckd_stage_unknown,vi,exercise,medquad_ckd_003,auto_validated,exercise intent
+router_ckd_stage_unknown_010,Các dấu hiệu lâm sàng cảnh báo chức năng thận suy giảm như phù chân hay mệt mỏi?,ckd_stage_unknown,vi,symptom_context,medquad_ckd_004,auto_validated,treatment context
+router_ckd_stage_unknown_011,Tại sao bệnh nhân mắc bệnh thận mạn thường gặp biến chứng thiếu máu và mệt mỏi kéo dài?,ckd_stage_unknown,vi,symptom_context,medquad_ckd_005,auto_validated,treatment context
+router_ckd_stage_unknown_012,"Các triệu chứng mệt mỏi, khó thở ở người bệnh thận mạn khi nào cần đi khám bác sĩ ngay?",ckd_stage_unknown,vi,symptom_context,medquad_ckd_006,auto_validated,treatment context
+router_ckd_stage_unknown_013,Biến chứng bệnh thận do tiểu đường hình thành như thế nào ở người bị tăng đường huyết kéo dài?,ckd_stage_unknown,vi,direct_condition,medquad_ckd_007,auto_validated,explicit diagnosis
+router_ckd_stage_unknown_014,Tại sao một kết quả creatinine máu cao đơn lẻ chưa đủ để chẩn đoán bệnh nhân bị suy thận?,ckd_stage_unknown,vi,measurement,vihealthqa_ckd_unknown_0001,auto_validated,measurement context
+router_ckd_stage_unknown_015,Albumin niệu là gì và tại sao nó giúp phát hiện sớm tổn thương thận khi chưa có triệu chứng?,ckd_stage_unknown,vi,measurement,vihealthqa_ckd_unknown_0002,auto_validated,measurement context
+router_ckd_stage_unknown_016,Tại sao chưa rõ giai đoạn suy thận thì app không nên tự động khuyến nghị kiêng cữ kali?,ckd_stage_unknown,vi,nutrition,ckd_unknown_005,auto_validated,nutrition intent
+router_ckd_stage_unknown_017,chua ro giai doan suy than thi co uong duoc thuoc giam dau ibuprofen khong,ckd_stage_unknown,vi,medication_safety,ckd_unknown_007,auto_validated,accentless variation
+router_ckd_stage_unknown_018,tai sao benh than man lai gay ra thieu mau,ckd_stage_unknown,vi,symptom_context,medquad_ckd_005,auto_validated,accentless variation
+router_ckd_stage_unknown_019,bi benh than man kieng gi,ckd_stage_unknown,vi,nutrition,ckd_unknown_001,auto_validated,short colloquial query
+router_ckd_stage_unknown_020,creatinine cao co phai suy than,ckd_stage_unknown,vi,measurement,vihealthqa_ckd_unknown_0001,auto_validated,short colloquial query
+router_diabetes_type_1_001,"Tôi mới phát hiện mắc đái tháo đường tuýp 1, bác sĩ có thể cho tôi biết nguyên lý dinh dưỡng cơ bản không?",diabetes_type_1,vi,direct_condition,diabetes_t1_001,auto_validated,explicit diagnosis
+router_diabetes_type_1_002,Tại sao bệnh nhân đái tháo đường type 1 phải đếm lượng carbohydrate mỗi ngày vậy?,diabetes_type_1,vi,nutrition,diabetes_t1_002,auto_validated,nutrition intent
+router_diabetes_type_1_003,Người bị tiểu đường tuýp 1 cần phối hợp bữa ăn với tiêm insulin như thế nào?,diabetes_type_1,vi,meal_planning,diabetes_t1_001,auto_validated,meal planning intent
+router_diabetes_type_1_004,Tôi đang tiêm insulin nền mà ăn uống thất thường thì có dễ bị hạ đường huyết ở người type 1 không?,diabetes_type_1,vi,symptom_context,diabetes_t1_003,auto_validated,stage explicitly mentioned
+router_diabetes_type_1_005,Làm thế nào để tránh bị tụt đường huyết khi tập thể dục cho người đái tháo đường tuýp 1?,diabetes_type_1,vi,exercise,diabetes_t1_005,auto_validated,exercise intent
+router_diabetes_type_1_006,Cách xử lý nhanh khi có dấu hiệu hạ đường huyết ở bệnh nhân tiểu đường tuýp 1 là gì?,diabetes_type_1,vi,symptom_context,diabetes_t1_006,auto_validated,treatment context
+router_diabetes_type_1_007,Tôi có thể tự ý thay đổi liều lượng insulin nền hay insulin bữa ăn cho người đái tháo đường type I không?,diabetes_type_1,vi,medication_safety,diabetes_t1_008,auto_validated,medication safety intent
+router_diabetes_type_1_008,Khi nào người bị đái tháo đường tuýp 1 cần phải nhập viện cấp cứu vì biến chứng ceton?,diabetes_type_1,vi,symptom_context,diabetes_t1_009,auto_validated,treatment context
+router_diabetes_type_1_009,Tiểu đường tuýp 1 đi du lịch xa qua các múi giờ khác nhau thì điều chỉnh giờ tiêm insulin ra sao?,diabetes_type_1,vi,lifestyle,diabetes_t1_010,auto_validated,lifestyle intent
+router_diabetes_type_1_010,Khi người bị tiểu đường tuýp 1 bị sốt hay cảm cúm thì việc theo dõi đường huyết cần thay đổi thế nào?,diabetes_type_1,vi,measurement,diabetes_t1_011,auto_validated,measurement context
+router_diabetes_type_1_011,Đái tháo đường tuýp 1 uống rượu có an toàn không và nó tác động thế nào đến gan?,diabetes_type_1,vi,lifestyle,diabetes_t1_012,auto_validated,lifestyle intent
+router_diabetes_type_1_012,Người bị tiểu đường type 1 cần đếm carb thế nào để tính liều lượng insulin bolus chuẩn xác?,diabetes_type_1,vi,nutrition,diabetes_t1_013,auto_validated,nutrition intent
+router_diabetes_type_1_013,Nếu đã tiêm insulin tác dụng nhanh rồi mà bỏ bữa thì tiểu đường tuýp 1 gặp biến chứng gì?,diabetes_type_1,vi,medication_safety,diabetes_t1_014,auto_validated,medication safety intent
+router_diabetes_type_1_014,Quy tắc 15 để sơ cứu hạ đường huyết cho người đái tháo đường type 1 được thực hiện cụ thể ra sao?,diabetes_type_1,vi,symptom_context,diabetes_t1_016,auto_validated,treatment context
+router_diabetes_type_1_015,Hệ miễn dịch phá hủy tế bào beta tuyến tụy gây ra bệnh đái tháo đường tuýp 1 như thế nào?,diabetes_type_1,vi,direct_condition,medquad_diabetes_t1_001,auto_validated,explicit diagnosis
+router_diabetes_type_1_016,Các triệu chứng ban đầu của tiểu đường type 1 bao gồm những gì ở người trẻ tuổi?,diabetes_type_1,vi,symptom_context,medquad_diabetes_t1_002,auto_validated,treatment context
+router_diabetes_type_1_017,tieu duong tuyp 1 co nguy hiem den tinh mang khong va can kiem soat the nao,diabetes_type_1,vi,direct_condition,medquad_diabetes_t1_003,auto_validated,accentless variation
+router_diabetes_type_1_018,tiem insulin cho nguoi dai thao duong type 1 co can do duong huyet truoc khong,diabetes_type_1,vi,measurement,diabetes_t1_011,auto_validated,accentless variation
+router_diabetes_type_1_019,giao duc dinh duong tieu duong tuyp 1,diabetes_type_1,vi,direct_condition,diabetes_t1_001,auto_validated,short colloquial query
+router_diabetes_type_1_020,ha duong huyet o nguoi type 1,diabetes_type_1,vi,symptom_context,diabetes_t1_006,auto_validated,short colloquial query
+router_diabetes_type_2_001,Chế độ dinh dưỡng để cải thiện độ nhạy insulin cho người đái tháo đường tuýp 2 cần lưu ý những gì?,diabetes_type_2,vi,direct_condition,diabetes_t2_001,auto_validated,explicit diagnosis
+router_diabetes_type_2_002,Tại sao người mắc tiểu đường tuýp 2 nên ăn carbohydrate phức hợp thay vì carb tinh chế?,diabetes_type_2,vi,nutrition,diabetes_t2_002,auto_validated,nutrition intent
+router_diabetes_type_2_003,Phương pháp đĩa ăn dinh dưỡng hỗ trợ người bệnh đái tháo đường tuýp 2 chia khẩu phần như thế nào?,diabetes_type_2,vi,meal_planning,diabetes_t2_003,auto_validated,meal planning intent
+router_diabetes_type_2_004,Người bị tiểu đường tuýp 2 có cần kiêng hoàn toàn nước ngọt và trà sữa đóng hộp không?,diabetes_type_2,vi,food_restriction,diabetes_t2_004,auto_validated,food restriction intent
+router_diabetes_type_2_005,Lợi ích của chất xơ hòa tan đối với việc cải thiện HbA1c ở bệnh nhân đái tháo đường tuýp 2 là gì?,diabetes_type_2,vi,nutrition,diabetes_t2_005,auto_validated,nutrition intent
+router_diabetes_type_2_006,Mỗi tuần người bệnh tiểu đường tuýp 2 nên tập thể dục bao nhiêu phút để giảm kháng insulin?,diabetes_type_2,vi,exercise,diabetes_t2_006,auto_validated,exercise intent
+router_diabetes_type_2_007,"Béo phì và tiểu đường tuýp 2 có liên quan thế nào, và giảm bao nhiêu cân thì có lợi?",diabetes_type_2,vi,lifestyle,diabetes_t2_007,auto_validated,lifestyle intent
+router_diabetes_type_2_008,Bệnh nhân đái tháo đường tuýp 2 tự đo đường huyết lúc đói và sau ăn tại nhà có tác gì không?,diabetes_type_2,vi,measurement,diabetes_t2_008,auto_validated,measurement context
+router_diabetes_type_2_009,Thuốc sulfonylurea có thể gây hạ đường huyết cho người bệnh tiểu đường tuýp 2 không?,diabetes_type_2,vi,medication_safety,diabetes_t2_009,auto_validated,medication safety intent
+router_diabetes_type_2_010,"Khi thiết kế thực đơn chi tiết cho người tiểu đường tuýp 2, tại sao cần tham vấn bác sĩ dinh dưỡng?",diabetes_type_2,vi,direct_condition,diabetes_t2_010,auto_validated,treatment context
+router_diabetes_type_2_011,Tập luyện kháng lực mang lại lợi ích gì cho cơ bắp của người đái tháo đường tuýp 2?,diabetes_type_2,vi,exercise,diabetes_t2_011,auto_validated,exercise intent
+router_diabetes_type_2_012,"Khi ăn tiệm hoặc đi ăn ngoài, người bị đái tháo đường tuýp 2 nên chọn món ăn thế nào?",diabetes_type_2,vi,meal_planning,diabetes_t2_012,auto_validated,meal planning intent
+router_diabetes_type_2_013,Hướng dẫn người bệnh tiểu đường tuýp 2 cách đọc chỉ số carbohydrate trên nhãn thực phẩm?,diabetes_type_2,vi,nutrition,diabetes_t2_013,auto_validated,nutrition intent
+router_diabetes_type_2_014,Gợi ý bữa sáng lành mạnh và giàu đạm cho người bệnh đái tháo đường tuýp 2 tránh vọt đường huyết?,diabetes_type_2,vi,meal_planning,diabetes_t2_014,auto_validated,meal planning intent
+router_diabetes_type_2_015,Người bệnh đái tháo đường tuýp 2 nên chọn những thực phẩm nào cho bữa phụ lành mạnh?,diabetes_type_2,vi,meal_planning,diabetes_t2_015,auto_validated,meal planning intent
+router_diabetes_type_2_016,Đái tháo đường tuýp 2 tiến triển thành biến chứng bệnh thận mạn có phổ biến không?,diabetes_type_2,vi,direct_condition,diabetes_t2_017,auto_validated,explicit diagnosis
+router_diabetes_type_2_017,chế độ ăn giảm cân cho người béo phì bị tiểu đường tuýp 2,diabetes_type_2,vi,lifestyle,diabetes_t2_007,auto_validated,short colloquial query
+router_diabetes_type_2_018,tự đo đường huyết tại nhà cho người type 2,diabetes_type_2,vi,measurement,diabetes_t2_008,auto_validated,short colloquial query
+router_diabetes_type_2_019,tieu duong tuyp 2 co can uong thuoc ha duong huyet suot doi khong,diabetes_type_2,vi,medication_safety,diabetes_t2_009,auto_validated,accentless variation
+router_diabetes_type_2_020,tap the duc cho nguoi tieu duong type 2,diabetes_type_2,vi,exercise,diabetes_t2_006,auto_validated,accentless variation
+router_diabetes_type_unknown_001,Nguyên tắc ăn uống an toàn ban đầu cho người mới chẩn đoán đái tháo đường chưa rõ loại?,diabetes_type_unknown,vi,direct_condition,diabetes_unknown_001,auto_validated,explicit diagnosis
+router_diabetes_type_unknown_002,Tại sao cần phân biệt rõ đái tháo đường type 1 và type 2 trước khi bắt đầu dùng thuốc?,diabetes_type_unknown,vi,medication_safety,diabetes_unknown_002,auto_validated,medication safety intent
+router_diabetes_type_unknown_003,Tôi bị đái tháo đường chưa rõ phân loại thì có được tự ý điều chỉnh liều thuốc hạ đường huyết không?,diabetes_type_unknown,vi,medication_safety,diabetes_unknown_007,auto_validated,medication safety intent
+router_diabetes_type_unknown_004,Thực đơn dinh dưỡng chung cho người bị tiểu đường chưa xác định type nên chọn những món gì?,diabetes_type_unknown,vi,nutrition,diabetes_unknown_005,auto_validated,nutrition intent
+router_diabetes_type_unknown_005,Người bị bệnh đường huyết nói chung có thể thay thế cơm trắng bằng những loại ngũ cốc nào?,diabetes_type_unknown,vi,nutrition,vihealthqa_diabetes_unknown_0001,auto_validated,food restriction intent
+router_diabetes_type_unknown_006,Chất xơ tự nhiên trong rau quả có công dụng gì trong việc ổn định đường huyết của người bệnh tiểu đường?,diabetes_type_unknown,vi,nutrition,vihealthqa_diabetes_unknown_0002,auto_validated,nutrition intent
+router_diabetes_type_unknown_007,Tại sao bệnh nhân tiểu đường không nên nhịn ăn tùy tiện khi đang điều trị?,diabetes_type_unknown,vi,meal_planning,vihealthqa_diabetes_unknown_0003,auto_validated,meal planning intent
+router_diabetes_type_unknown_008,Một lần đo đường huyết lúc đói cao có đủ để kết luận bị tiểu đường hay chưa?,diabetes_type_unknown,vi,measurement,vihealthqa_diabetes_unknown_0004,auto_validated,measurement context
+router_diabetes_type_unknown_009,Các phương pháp kiểm soát đường huyết hiệu quả cho người mắc bệnh đái tháo đường?,diabetes_type_unknown,vi,direct_condition,vihealthqa_diabetes_unknown_0005,auto_validated,explicit diagnosis
+router_diabetes_type_unknown_010,Làm thế nào để hệ thống tư vấn dinh dưỡng cho người bị tiểu đường khi chưa biết rõ phân loại?,diabetes_type_unknown,vi,direct_condition,diabetes_unknown_004,auto_validated,treatment context
+router_diabetes_type_unknown_011,Đái tháo đường chưa rõ phân loại có được ăn chất xơ và rau xanh thoải mái không?,diabetes_type_unknown,vi,nutrition,vihealthqa_diabetes_unknown_0002,auto_validated,nutrition intent
+router_diabetes_type_unknown_012,Lối sống và tập luyện tác động thế nào đến kiểm soát chỉ số đường huyết ở người bệnh tiểu đường?,diabetes_type_unknown,vi,exercise,vihealthqa_diabetes_unknown_0005,auto_validated,exercise intent
+router_diabetes_type_unknown_013,Sự khác biệt về nhu cầu sử dụng insulin giữa các loại đái tháo đường khác nhau?,diabetes_type_unknown,vi,medication_safety,diabetes_unknown_006,auto_validated,medication safety intent
+router_diabetes_type_unknown_014,Tại sao tôi phải đi khám để xác định rõ loại đái tháo đường thay vì dùng chung thực đơn?,diabetes_type_unknown,vi,direct_condition,diabetes_unknown_003,auto_validated,explicit diagnosis
+router_diabetes_type_unknown_015,Chế độ ăn ít thực phẩm chế biến sẵn giúp ích gì cho người bệnh đường huyết?,diabetes_type_unknown,vi,nutrition,diabetes_unknown_001,auto_validated,nutrition intent
+router_diabetes_type_unknown_016,Tại sao người mắc bệnh tiểu đường cần duy trì bữa ăn đều đặn và tránh bỏ bữa?,diabetes_type_unknown,vi,meal_planning,vihealthqa_diabetes_unknown_0003,auto_validated,meal planning intent
+router_diabetes_type_unknown_017,bi benh tieu duong thi nen kieng mon an nao de an toan,diabetes_type_unknown,vi,food_restriction,diabetes_unknown_001,auto_validated,accentless variation
+router_diabetes_type_unknown_018,chi so glucose bao nhieu thi bi coi la mac benh tieu duong,diabetes_type_unknown,vi,measurement,vihealthqa_diabetes_unknown_0004,auto_validated,accentless variation
+router_diabetes_type_unknown_019,bi tieu duong chua ro loai,diabetes_type_unknown,vi,direct_condition,diabetes_unknown_001,auto_validated,short colloquial query
+router_diabetes_type_unknown_020,kieng com cho nguoi tieu duong,diabetes_type_unknown,vi,food_restriction,vihealthqa_diabetes_unknown_0001,auto_validated,short colloquial query
+router_general_safety_001,Ứng dụng này có chức năng thay thế bác sĩ trong việc kê đơn thuốc điều trị bệnh mạn tính không?,general_safety,vi,general_safety,safety_001,auto_validated,general safety intent
+router_general_safety_002,Tôi có được tự ý tăng hoặc giảm liều thuốc tiểu đường và huyết áp theo gợi ý trên app không?,general_safety,vi,medication_safety,safety_002,auto_validated,medication safety intent
+router_general_safety_003,"Người bệnh tiểu đường bị lơ mơ, vã mồ hôi rồi ngất xỉu thì có cần gọi cấp cứu ngay lập tức?",general_safety,vi,general_safety,safety_003,auto_validated,general safety intent
+router_general_safety_004,"Tôi đột ngột bị đau tức ngực dữ dội như đá đè và vã mồ hôi, tôi cần làm gì lúc này?",general_safety,vi,general_safety,safety_004,auto_validated,general safety intent
+router_general_safety_005,"Nếu người nhà đột ngột mất ý thức và ngất xỉu, tôi nên sơ cứu thế nào trước khi xe cấp cứu đến?",general_safety,vi,general_safety,safety_005,auto_validated,general safety intent
+router_general_safety_006,"Các triệu chứng đột quỵ như méo miệng, liệt nửa người khởi phát đột ngột cần xử lý cấp cứu ra sao?",general_safety,vi,general_safety,safety_006,auto_validated,general safety intent
+router_general_safety_007,Phụ nữ mang thai mắc đồng thời nhiều bệnh mạn tính phức tạp có nên dùng thực đơn tự động của app?,general_safety,vi,general_safety,safety_007,auto_validated,general safety intent
+router_general_safety_008,Tại sao người già bị béo phì kèm suy thận mạn tránh kiêng khem quá mức để không bị teo cơ?,general_safety,vi,general_safety,safety_008,auto_validated,general safety intent
+router_general_safety_009,Người có dấu hiệu rối loạn ăn uống như cố tình móc họng nôn sau ăn có dùng được app không?,general_safety,vi,general_safety,safety_009,auto_validated,general safety intent
+router_general_safety_010,Khi các chỉ số xét nghiệm do người dùng nhập vào mâu thuẫn nhau thì app cảnh báo thế nào?,general_safety,vi,general_safety,safety_010,auto_validated,general safety intent
+router_general_safety_011,"Tôi vừa suy thận giai đoạn G4 vừa bị tăng kali máu, làm sao giải quyết mâu thuẫn khi kiêng ăn?",general_safety,vi,general_safety,safety_011,auto_validated,general safety intent
+router_general_safety_012,App HealthyPlan có chức năng đưa ra chẩn đoán lâm sàng hay thay thế chẩn đoán của bác sĩ không?,general_safety,vi,general_safety,safety_001,auto_validated,general safety intent
+router_general_safety_013,Sơ cứu tại chỗ khi bệnh nhân đái tháo đường bị hạ đường huyết nghiêm trọng bất tỉnh?,general_safety,vi,general_safety,safety_003,auto_validated,general safety intent
+router_general_safety_014,"Tôi bị đau ngực lan lên vai trái và khó thở dữ dội, đây có phải là dấu hiệu của nhồi máu cơ tim không?",general_safety,vi,general_safety,safety_004,auto_validated,general safety intent
+router_general_safety_015,Tại sao người cao tuổi bị béo phì giảm cân quá mức lại nguy hiểm cho khối cơ xương?,general_safety,vi,general_safety,safety_008,auto_validated,general safety intent
+router_general_safety_016,Người có tiền sử chán ăn tâm thần có thể tham khảo chế độ dinh dưỡng trên app không?,general_safety,vi,general_safety,safety_009,auto_validated,general safety intent
+router_general_safety_017,app co tu dong sua lieu thuoc khi chi so duong huyet thay doi khong,general_safety,vi,medication_safety,safety_002,auto_validated,accentless variation
+router_general_safety_018,me toi bi meo mieng va yeu nua nguoi thi phai lam sao,general_safety,vi,general_safety,safety_006,auto_validated,accentless variation
+router_general_safety_019,app co chan doan benh khong,general_safety,vi,general_safety,safety_001,auto_validated,short colloquial query
+router_general_safety_020,dau nguc du doi cap cuu,general_safety,vi,general_safety,safety_004,auto_validated,short colloquial query
+router_gout_001,Chỉ số axit uric máu cao có chắc chắn đồng nghĩa với việc tôi đã mắc bệnh gout hay chưa?,gout,vi,direct_condition,gout_001,auto_validated,explicit diagnosis
+router_gout_002,Tại sao người bị gout cần kiêng ăn nội tạng động vật như gan và thận tuyệt đối?,gout,vi,food_restriction,gout_003,auto_validated,food restriction intent
+router_gout_003,Những loại hải sản nào chứa nhiều nhân purine có nguy cơ kích hoạt cơn gout cấp?,gout,vi,food_restriction,gout_005,auto_validated,food restriction intent
+router_gout_004,Tại sao người bệnh gout phải kiêng uống rượu bia và các chất có cồn nói chung?,gout,vi,food_restriction,gout_006,auto_validated,food restriction intent
+router_gout_005,Nước ngọt chứa đường fructose ảnh hưởng thế nào đến quá trình bài tiết axit uric qua thận?,gout,vi,food_restriction,gout_007,auto_validated,food restriction intent
+router_gout_006,Sự khác biệt chính giữa thực đơn trong cơn gout cấp và chế độ ăn quản lý gout lâu dài?,gout,vi,meal_planning,gout_009,auto_validated,meal planning intent
+router_gout_007,Chế độ dinh dưỡng đóng góp bao nhiêu phần trăm vào việc hạ nồng độ axit uric máu ở người bị gout?,gout,vi,nutrition,gout_018,auto_validated,nutrition intent
+router_gout_008,Tại sao nước hầm xương và nước lẩu đậm đặc lại không tốt cho bệnh nhân gout?,gout,vi,food_restriction,gout_011,auto_validated,food restriction intent
+router_gout_009,"Người bệnh gout ăn súp lơ, nấm hoặc măng tây có làm tăng nguy cơ bùng phát cơn đau không?",gout,vi,nutrition,gout_012,auto_validated,nutrition intent
+router_gout_010,Lợi ích của việc uống sữa ít béo đối với quá trình hỗ trợ điều trị bệnh gout là gì?,gout,vi,nutrition,gout_013,auto_validated,nutrition intent
+router_gout_011,Tại sao giảm cân quá đột ngột lại có nguy cơ kích hoạt cơn đau khớp gout cấp tính?,gout,vi,lifestyle,gout_014,auto_validated,lifestyle intent
+router_gout_012,Mối liên hệ nguy hiểm giữa chức năng thận suy giảm và khả năng lọc axit uric máu?,gout,vi,direct_condition,gout_015,auto_validated,explicit diagnosis
+router_gout_013,Mục tiêu nồng độ axit uric máu cần đạt được để ngăn ngừa hình thành hạt tophi ở khớp?,gout,vi,measurement,gout_016,auto_validated,measurement context
+router_gout_014,Tại sao chất cồn trong các loại rượu mạnh cũng gây hại tương tự như bia đối với người bệnh gout?,gout,vi,food_restriction,gout_017,auto_validated,food restriction intent
+router_gout_015,Chế độ ăn uống lành mạnh có thể thay thế hoàn toàn cho thuốc hạ axit uric của bác sĩ không?,gout,vi,direct_condition,gout_010,auto_validated,treatment context
+router_gout_016,"Các triệu chứng đau khớp dữ dội, sưng đỏ do tinh thể muối urat tích tụ gây ra như thế nào?",gout,vi,symptom_context,medquad_gout_001,auto_validated,treatment context
+router_gout_017,bi benh gout thi co can kieng an thit bo hoac noi tang khong,gout,vi,food_restriction,gout_003,auto_validated,accentless variation
+router_gout_018,axit uric bao nhieu thi phai uong thuoc dieu tri gout,gout,vi,measurement,gout_016,auto_validated,accentless variation
+router_gout_019,benh gut kieng an gi,gout,vi,food_restriction,gout_002,auto_validated,short colloquial query
+router_gout_020,sua it beo cho nguoi gout,gout,vi,nutrition,gout_013,auto_validated,short colloquial query
+router_hypertension_001,Chế độ dinh dưỡng hạn chế muối natri cho bệnh nhân tăng huyết áp có vai trò quan trọng như thế nào?,hypertension,vi,direct_condition,hypertension_001,auto_validated,explicit diagnosis
+router_hypertension_002,Tại sao người cao huyết áp cần cẩn trọng khi nêm nếm nước mắm và nước tương?,hypertension,vi,nutrition,hypertension_002,auto_validated,nutrition intent
+router_hypertension_003,Nguồn natri ẩn giấu trong thực phẩm đóng hộp ảnh hưởng thế nào đến người tăng huyết áp?,hypertension,vi,food_restriction,hypertension_003,auto_validated,food restriction intent
+router_hypertension_004,Tại sao rau quả tươi và các loại hạt lại được khuyến khích trong thực đơn của người cao huyết áp?,hypertension,vi,nutrition,hypertension_004,auto_validated,nutrition intent
+router_hypertension_005,Làm thế nào để tự đo huyết áp bằng máy đo bắp tay tại nhà đúng kỹ thuật?,hypertension,vi,measurement,hypertension_007,auto_validated,measurement context
+router_hypertension_006,Người bệnh cao huyết áp có được tự ý ngưng hay thay đổi liều lượng thuốc chẹn kênh canxi không?,hypertension,vi,medication_safety,hypertension_008,auto_validated,medication safety intent
+router_hypertension_007,Một muỗng canh xì dầu chứa khoảng bao nhiêu miligam natri và người cao huyết áp cần lưu ý gì?,hypertension,vi,nutrition,hypertension_010,auto_validated,nutrition intent
+router_hypertension_008,Tại sao giò chả và lạp xưởng chế biến sẵn lại chứa nhiều muối có hại cho huyết áp?,hypertension,vi,food_restriction,hypertension_012,auto_validated,food restriction intent
+router_hypertension_009,Cách xem và phân tích hàm lượng natri trên nhãn thực phẩm dành cho người bệnh tăng huyết áp?,hypertension,vi,nutrition,hypertension_013,auto_validated,nutrition intent
+router_hypertension_010,Chế độ ăn DASH được thiết kế như thế nào để giúp hạ huyết áp một cách tự nhiên?,hypertension,vi,nutrition,hypertension_014,auto_validated,nutrition intent
+router_hypertension_011,Chất caffeine trong cà phê và trà đặc có thể gây tăng huyết áp tạm thời hay không?,hypertension,vi,lifestyle,hypertension_015,auto_validated,lifestyle intent
+router_hypertension_012,Tác động tiêu cực của việc uống nhiều rượu bia đến hiệu quả điều trị của thuốc hạ huyết áp?,hypertension,vi,lifestyle,hypertension_016,auto_validated,lifestyle intent
+router_hypertension_013,Tư thế ngồi và thời gian nghỉ ngơi tiêu chuẩn trước khi đo huyết áp tại nhà là gì?,hypertension,vi,measurement,hypertension_018,auto_validated,measurement context
+router_hypertension_014,Thế nào là tăng huyết áp và làm thế nào để chẩn đoán chính xác qua các lần đo?,hypertension,vi,direct_condition,medquad_hypertension_001,auto_validated,explicit diagnosis
+router_hypertension_015,Những yếu tố nguy cơ nào dẫn đến tăng huyết áp ở người trung niên ít vận động?,hypertension,vi,lifestyle,medquad_hypertension_002,auto_validated,lifestyle intent
+router_hypertension_016,Tại sao tăng huyết áp lại được gọi là kẻ giết người thầm lặng và các biến chứng của nó?,hypertension,vi,symptom_context,medquad_hypertension_003,auto_validated,treatment context
+router_hypertension_017,huong dan kiem soat huyet ap cho nguoi cao tuoi,hypertension,vi,direct_condition,medquad_hypertension_004,auto_validated,accentless variation
+router_hypertension_018,uong ruou bia lam tang huyet ap nhu the nao,hypertension,vi,lifestyle,hypertension_016,auto_validated,accentless variation
+router_hypertension_019,kiem soat cao huyet ap,hypertension,vi,direct_condition,vihealthqa_hypertension_0001,auto_validated,short colloquial query
+router_hypertension_020,che do an dash la gi,hypertension,vi,nutrition,hypertension_014,auto_validated,short colloquial query
+router_obesity_001,Nguyên lý thâm hụt calo trong việc quản lý cân nặng cho người béo phì hoạt động ra sao?,obesity,vi,direct_condition,obesity_001,auto_validated,explicit diagnosis
+router_obesity_002,Sử dụng đĩa ăn chuyên dụng và ghi nhật ký thực phẩm giúp ích gì cho người muốn giảm cân?,obesity,vi,meal_planning,obesity_002,auto_validated,meal planning intent
+router_obesity_003,Làm thế nào để chọn thực phẩm có mật độ năng lượng thấp để giảm cân mà không thấy đói?,obesity,vi,nutrition,obesity_003,auto_validated,nutrition intent
+router_obesity_004,Tại sao cắt giảm đồ uống ngọt có gas lại giúp người béo phì giảm cân nhanh chóng?,obesity,vi,food_restriction,obesity_004,auto_validated,food restriction intent
+router_obesity_005,Vai trò của hoạt động thể chất và điều chỉnh chế độ ăn trong việc duy trì cân nặng sau giảm béo?,obesity,vi,exercise,obesity_005,auto_validated,exercise intent
+router_obesity_006,Các nguy cơ sức khỏe khi áp dụng chế độ ăn kiêng cực đoan hoặc nhịn ăn detox để giảm cân?,obesity,vi,lifestyle,obesity_006,auto_validated,lifestyle intent
+router_obesity_007,Nguyên nhân nào khiến người cao tuổi bị thừa cân cần hết sức thận trọng khi kiêng khem giảm béo?,obesity,vi,lifestyle,obesity_007,auto_validated,lifestyle intent
+router_obesity_008,Làm thế nào để nhận diện các dấu hiệu của chứng rối loạn ăn uống như nhịn ăn quá mức?,obesity,vi,direct_condition,obesity_008,auto_validated,treatment context
+router_obesity_009,Làm thế nào để khắc phục thói quen ăn uống theo cảm xúc khi gặp căng thẳng kéo dài?,obesity,vi,lifestyle,obesity_009,auto_validated,lifestyle intent
+router_obesity_010,Mối liên quan trực tiếp giữa tình trạng thiếu ngủ dưới 6 tiếng và nguy cơ gia tăng béo phì?,obesity,vi,lifestyle,obesity_010,auto_validated,lifestyle intent
+router_obesity_011,Tại sao thực phẩm giàu đạm lại giúp tăng cảm giác no lâu và hạn chế thèm ăn khi giảm mỡ?,obesity,vi,nutrition,obesity_012,auto_validated,nutrition intent
+router_obesity_012,Tại sao tốc độ giảm cân an toàn cho người thừa cân chỉ nên từ nửa cân đến 1kg một tuần?,obesity,vi,direct_condition,obesity_013,auto_validated,treatment context
+router_obesity_013,Thời gian và hình thức tập thể dục hiếu khí được khuyến nghị để duy trì cân nặng ổn định?,obesity,vi,exercise,obesity_014,auto_validated,exercise intent
+router_obesity_014,Tại sao tích tụ mỡ thừa ở vùng bụng lại làm tăng nguy cơ kháng insulin và tiểu đường type 2?,obesity,vi,direct_condition,obesity_015,auto_validated,explicit diagnosis
+router_obesity_015,Béo phì làm tăng áp lực lên tim và đẩy nhanh quá trình xơ vữa động mạch thế nào?,obesity,vi,direct_condition,obesity_016,auto_validated,explicit diagnosis
+router_obesity_016,Thế nào là tình trạng tích lũy quá nhiều mỡ và cách tính chỉ số BMI để sàng lọc thừa cân?,obesity,vi,measurement,medquad_obesity_003,auto_validated,measurement context
+router_obesity_017,cach cat giam do uong co gas de giam beo phan bung,obesity,vi,food_restriction,obesity_004,auto_validated,accentless variation
+router_obesity_018,nguyen nhan khien calo nap vao lon hon calo tieu thu gay beo phi,obesity,vi,direct_condition,medquad_obesity_002,auto_validated,accentless variation
+router_obesity_019,cach giam can an toan,obesity,vi,direct_condition,obesity_013,auto_validated,short colloquial query
+router_obesity_020,mat do nang luong thuc pham,obesity,vi,nutrition,obesity_011,auto_validated,short colloquial query
+router_prediabetes_001,Người bị tiền đái tháo đường cần hiểu thế nào về nguy cơ tiến triển thành bệnh thực sự?,prediabetes,vi,direct_condition,prediabetes_001,auto_validated,explicit diagnosis
+router_prediabetes_002,Tại sao người mắc tiền tiểu đường không nên cắt giảm toàn bộ tinh bột trong khẩu phần ăn?,prediabetes,vi,nutrition,prediabetes_002,auto_validated,nutrition intent
+router_prediabetes_003,"Người tiền tiểu đường ăn cơm, bún, phở như thế nào để kiểm soát tốt đường huyết?",prediabetes,vi,meal_planning,prediabetes_002,auto_validated,meal planning intent
+router_prediabetes_004,Tác hại của đồ uống ngọt nhiều đường fructose đối với người có nguy cơ tiến triển thành tiểu đường?,prediabetes,vi,food_restriction,prediabetes_003,auto_validated,food restriction intent
+router_prediabetes_005,Mục tiêu giảm cân bền vững để phòng ngừa đái tháo đường ở người bị tiền đái tháo đường?,prediabetes,vi,lifestyle,prediabetes_004,auto_validated,lifestyle intent
+router_prediabetes_006,Người có chẩn đoán tiền tiểu đường nên vận động thể chất với tần suất thế nào?,prediabetes,vi,exercise,prediabetes_005,auto_validated,exercise intent
+router_prediabetes_007,Chương trình Phòng ngừa Đái tháo đường Quốc gia (DPP) mang lại lợi ích gì cho người tiền đái tháo đường?,prediabetes,vi,lifestyle,prediabetes_006,auto_validated,lifestyle intent
+router_prediabetes_008,Khi nào bác sĩ mới chỉ định dùng thuốc metformin cho người bị tiền tiểu đường?,prediabetes,vi,medication_safety,prediabetes_008,auto_validated,medication safety intent
+router_prediabetes_009,Đồ uống có đường lỏng như soda và trà sữa ảnh hưởng thế nào đến người tiền đái tháo đường?,prediabetes,vi,food_restriction,prediabetes_009,auto_validated,food restriction intent
+router_prediabetes_010,Đi bộ nhẹ từ 10 đến 15 phút sau bữa ăn giúp giảm đường huyết cho người tiền tiểu đường ra sao?,prediabetes,vi,exercise,prediabetes_010,auto_validated,exercise intent
+router_prediabetes_011,Tại sao giấc ngủ dưới 6 tiếng mỗi đêm lại làm tăng đề kháng insulin ở người tiền tiểu đường?,prediabetes,vi,lifestyle,prediabetes_011,auto_validated,lifestyle intent
+router_prediabetes_012,"Lối sống ngồi nhiều, ít vận động làm tăng nguy cơ tiến triển đái tháo đường như thế nào?",prediabetes,vi,lifestyle,prediabetes_013,auto_validated,lifestyle intent
+router_prediabetes_013,Xét nghiệm máu nào giúp xác định một người đang bị tiền đái tháo đường?,prediabetes,vi,measurement,vihealthqa_prediabetes_0001,auto_validated,measurement context
+router_prediabetes_014,Tình trạng kháng insulin là gì và nó liên quan thế nào đến nguy cơ mắc tiền tiểu đường?,prediabetes,vi,direct_condition,medquad_prediabetes_001,auto_validated,explicit diagnosis
+router_prediabetes_015,Chế độ dinh dưỡng ưu tiên thực phẩm ít chế biến cho người bị tiền tiểu đường?,prediabetes,vi,nutrition,medquad_prediabetes_004,auto_validated,nutrition intent
+router_prediabetes_016,Các triệu chứng thầm lặng của tiền tiểu đường mà người bệnh cần cảnh giác?,prediabetes,vi,symptom_context,medquad_prediabetes_003,auto_validated,treatment context
+router_prediabetes_017,tien tieu duong co can phai uong thuoc metformin khong,prediabetes,vi,medication_safety,vihealthqa_prediabetes_0002,auto_validated,accentless variation
+router_prediabetes_018,giam can de phong ngua tien dai thao duong,prediabetes,vi,lifestyle,prediabetes_004,auto_validated,accentless variation
+router_prediabetes_019,trieu chung tien tieu duong,prediabetes,vi,direct_condition,vihealthqa_prediabetes_0001,auto_validated,short colloquial query
+router_prediabetes_020,nguoi tien tieu duong nen an gi,prediabetes,vi,nutrition,medquad_prediabetes_004,auto_validated,short colloquial query

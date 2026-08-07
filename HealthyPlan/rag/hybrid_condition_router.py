@@ -1,8 +1,8 @@
-from bm25_router import search_bm25_router
-from condition_router import search_router_examples
-from config import HYBRID_DENSE_TOP_N, HYBRID_BM25_TOP_N, HYBRID_FINAL_TOP_N, HYBRID_MATCH_WEIGHTS, HYBRID_CONSENSUS_MIN_SIMILARITY, HYBRID_CONSENSUS_MAX_BM25_RANK, RRF_K, ROUTER_MIN_SIMILARITY, ROUTER_MIN_SCORE_GAP, ROUTER_MAX_MATCHES_PER_CONDITION
-from entity_extractor import extract_medical_entities
-from safety_flag_extractor import extract_safety_flags
+from .bm25_router import search_bm25_router
+from .condition_router import search_router_examples
+from .config import HYBRID_DENSE_TOP_N, HYBRID_BM25_TOP_N, HYBRID_FINAL_TOP_N, HYBRID_MATCH_WEIGHTS, HYBRID_CONSENSUS_MIN_SIMILARITY, HYBRID_CONSENSUS_MAX_BM25_RANK, RRF_K, ROUTER_MIN_SIMILARITY, ROUTER_MIN_SCORE_GAP, ROUTER_MAX_MATCHES_PER_CONDITION
+from .entity_extractor import extract_medical_entities
+from .safety_flag_extractor import extract_safety_flags
 
 
 SAFETY_ROUTE_FLAGS = {

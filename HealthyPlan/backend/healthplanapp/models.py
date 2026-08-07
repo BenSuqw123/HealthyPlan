@@ -1,6 +1,7 @@
-﻿from django.contrib.auth.models import AbstractUser
+﻿import uuid
+from django.contrib.auth.models import AbstractUser
 from django.db import models
-
+from django.conf import settings
 
 class User(AbstractUser):
     class Role(models.TextChoices):
@@ -31,9 +32,18 @@ class BaseModel(models.Model):
 
 
 class HealthIssue(BaseModel):
-    code = models.CharField(max_length=50, unique=True)
-    name = models.CharField(max_length=150)
+
+    class Kind(models.TextChoices):
+        DISEASE = "disease", "Nhóm bệnh"
+        TYPE = "type", "Loại bệnh"
+        STAGE = "stage", "Giai đoạn"
+
+    code = models.CharField(max_length=100, unique=True)
+    name = models.CharField(max_length=255)
     description = models.TextField(null=True, blank=True)
+    parent = models.ForeignKey("self", on_delete=models.CASCADE, null=True, blank=True, related_name="children")
+    kind = models.CharField(max_length=20, choices=Kind.choices, default=Kind.DISEASE)
+    selectable = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
@@ -65,7 +75,7 @@ class HealthProfile(BaseModel):
     goal = models.CharField(max_length=20, choices=Goal.choices, default=Goal.MAINTAIN_WEIGHT)
     target_weight = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     health_issues = models.ManyToManyField(HealthIssue, blank=True, related_name="health_profiles")
-
+    other_health_issue = models.TextField(null=True, blank=True)
     def __str__(self):
         return self.user.username
 
@@ -103,3 +113,32 @@ class HealthPlan(BaseModel):
 
     def __str__(self):
         return self.title
+
+class ConsultationSession(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="consultation_sessions")
+    title = models.CharField(max_length=255, blank=True, default="")
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.user} - {self.id}"
+
+
+class ConsultationMessage(models.Model):
+    ROLE_CHOICES = [
+        ("user", "User"),
+        ("assistant", "Assistant"),
+    ]
+
+    session = models.ForeignKey(ConsultationSession, on_delete=models.CASCADE, related_name="messages")
+    role = models.CharField(max_length=20, choices=ROLE_CHOICES)
+    content = models.TextField()
+    intent = models.CharField(max_length=50, blank=True, default="")
+    citations = models.JSONField(default=list, blank=True)
+    profile_snapshot = models.JSONField(default=dict, blank=True)
+    safety_metadata = models.JSONField(default=dict, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.role} - {self.session_id}"

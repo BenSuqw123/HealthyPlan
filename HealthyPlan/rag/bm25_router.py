@@ -5,8 +5,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from config import Path_Root, BM25_K1, BM25_B, BM25_TOP_N, BM25_MAX_NGRAM
-from query_processor import process_query
+from .config import Path_Root, BM25_K1, BM25_B, BM25_TOP_N, BM25_MAX_NGRAM
+from .query_processor import process_query
 
 
 CONDITION_ROUTER_DATA_PATH = f"{Path_Root}/data/rag/condition_router_examples_reviewed.csv"

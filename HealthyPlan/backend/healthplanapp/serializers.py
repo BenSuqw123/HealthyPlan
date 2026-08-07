@@ -1,10 +1,10 @@
-from time import timezone
 from django.contrib.auth.password_validation import validate_password
 from django.core.exceptions import ValidationError as DjangoValidationError
 from django.db import transaction
 from rest_framework import serializers
+from django.utils import timezone as django_timezone
 
-from .models import User, HealthProfile
+from .models import User, HealthProfile, HealthIssue, ConsultationSession, ConsultationMessage
 
 
 class UserResponseSerializer(serializers.ModelSerializer):
@@ -76,15 +76,46 @@ class UserUpdateSerializer(serializers.ModelSerializer):
 
         return normalized_email
 
-class HealthProfileSerializer(serializers.ModelSerializer):
+
+class HealthIssueSerializer(serializers.ModelSerializer):
+
+    parent_name = serializers.CharField(source="parent.name", read_only=True, default=None)
 
     class Meta:
+        model = HealthIssue
+        fields = ("id", "code", "name", "description", "parent", "parent_name", "kind", "selectable")
+        read_only_fields = ("id", "parent_name")
+
+    def validate_code(self, value):
+        normalized_code = value.strip().lower()
+        queryset = HealthIssue.objects.filter(code__iexact=normalized_code)
+
+        if self.instance is not None:
+            queryset = queryset.exclude(pk=self.instance.pk)
+
+        if queryset.exists():
+            raise serializers.ValidationError("Mã bệnh lý này đã tồn tại.")
+
+        return normalized_code
+
+    def validate_name(self, value):
+        normalized_name = value.strip()
+
+        if not normalized_name:
+            raise serializers.ValidationError("Tên bệnh lý không được để trống.")
+
+        return normalized_name
+
+
+class HealthProfileSerializer(serializers.ModelSerializer):
+    health_issues = HealthIssueSerializer(many=True, read_only=True)
+    class Meta:
         model = HealthProfile
-        fields = ("id", "date_of_birth", "gender", "weight", "height", "activity_level", "goal", "target_weight")
-        read_only_fields = ("id")
+        fields = ("id", "date_of_birth", "gender", "weight", "height", "activity_level", "goal", "target_weight","health_issues", "other_health_issue")
+        read_only_fields = ("id",)
 
     def validate_date_of_birth(self, value):
-        if value > timezone.localdate():
+        if value > django_timezone.localdate():
             raise serializers.ValidationError("Ngày sinh không được trong tương lai!")
 
         return value
@@ -126,4 +157,20 @@ class HealthProfileSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError({"target_weight": "Mục tiêu tăng cân phải lớn hơn cân nặng hiện tại."})
 
         return attrs
-    
+
+class ConsultationRequestSerializer(serializers.Serializer):
+    message = serializers.CharField(max_length=2000)
+    session_id = serializers.UUIDField(required=False, allow_null=True)
+
+    def validate_message(self, value):
+        value = value.strip()
+
+        if not value:
+            raise serializers.ValidationError("Nội dung câu hỏi không được để trống.")
+
+        return value
+
+class ConsultationMessageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ConsultationMessage
+        fields = ("id", "session", "role", "content", "created_at")

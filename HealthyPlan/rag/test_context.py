@@ -1,4 +1,4 @@
-from context_builder import (
+from .context_builder import (
     GENERAL_SAFETY_INSTRUCTIONS,
     build_context,
     build_knowledge_context,

@@ -1,6 +1,6 @@
 import re
 
-from entity_extractor import extract_medical_entities, find_first_pattern_match, normalize_entity_query
+from .entity_extractor import extract_medical_entities, find_first_pattern_match, normalize_entity_query
 
 
 SUPPORTED_SAFETY_FLAGS = {

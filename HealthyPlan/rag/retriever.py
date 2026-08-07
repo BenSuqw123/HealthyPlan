@@ -1,5 +1,5 @@
-from config import TOP_N
-from vector_store import (
+from .config import TOP_N
+from .vector_store import (
     embedding_texts,
     get_collection,
     get_vector_store,

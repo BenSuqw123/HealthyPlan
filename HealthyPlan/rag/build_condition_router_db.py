@@ -2,8 +2,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from config import Path_Root, CONDITION_ROUTER_COLLECTION_NAME
-from vector_store import get_chroma_client, embedding_texts
+from .config import Path_Root, CONDITION_ROUTER_COLLECTION_NAME
+from .vector_store import get_chroma_client, embedding_texts
 
 
 CONDITION_ROUTER_DATA_PATH = f"{Path_Root}/data/rag/condition_router_examples_reviewed.csv"

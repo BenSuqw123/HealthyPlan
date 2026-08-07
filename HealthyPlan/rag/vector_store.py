@@ -6,7 +6,7 @@ import numpy as np
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 
-from config import (
+from .config import (
     COLLECTION_NAME,
     CONDITION_ROUTER_COLLECTION_NAME,
     EMBEDDING_BATCH_SIZE,

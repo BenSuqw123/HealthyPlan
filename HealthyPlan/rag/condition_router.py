@@ -1,7 +1,7 @@
 import re
-from config import ROUTER_TOP_N, ROUTER_MIN_SIMILARITY, ROUTER_MIN_SCORE_GAP, ROUTER_MAX_MATCHES_PER_CONDITION
-from query_processor import process_query
-from vector_store import embedding_texts, get_condition_router_collection
+from .config import ROUTER_TOP_N, ROUTER_MIN_SIMILARITY, ROUTER_MIN_SCORE_GAP, ROUTER_MAX_MATCHES_PER_CONDITION
+from .query_processor import process_query
+from .vector_store import embedding_texts, get_condition_router_collection
 
 
 def calculate_rank_weight(rank, total_results):

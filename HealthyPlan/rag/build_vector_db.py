@@ -1,7 +1,7 @@
 from pathlib import Path
 import pandas as pd
-from vector_store import embedding_texts, get_chroma_client
-from config import COLLECTION_NAME
+from .vector_store import embedding_texts, get_chroma_client
+from .config import COLLECTION_NAME
 Path_Root = Path(__file__).resolve().parents[1]
 
 DATA_PATH = f'{Path_Root}/data/rag/health_knowledge_chunks.csv'

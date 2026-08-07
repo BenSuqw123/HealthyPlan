@@ -1,8 +1,7 @@
-from context_builder import build_context
-from health_answer_generator import generate_health_answer
-from hybrid_condition_router import route_condition_hybrid
-from retriever import retrieve
-
+from .context_builder import build_context
+from .health_answer_generator import generate_health_answer
+from .hybrid_condition_router import route_condition_hybrid
+from .retriever import retrieve
 
 def get_retrieval_condition_codes(router_result):
     conditions = list(router_result.get("conditions", []))
@@ -57,7 +56,7 @@ def run_rag_retrieval(query, top_n=None):
     }
 
 
-def run_rag_pipeline(query, top_n=None, llm=None):
+def run_rag_pipeline(query, health_context=None, top_n=None, llm=None):
     rag_retrieval_result = run_rag_retrieval(
         query=query,
         top_n=top_n,
@@ -66,6 +65,8 @@ def run_rag_pipeline(query, top_n=None, llm=None):
     context_data = build_context(
         rag_result=rag_retrieval_result,
     )
+
+    context_data["health_context"] = health_context or {}
 
     answer_result = generate_health_answer(
         context_data=context_data,
