@@ -174,3 +174,8 @@ class ConsultationMessageSerializer(serializers.ModelSerializer):
     class Meta:
         model = ConsultationMessage
         fields = ("id", "session", "role", "content", "created_at")
+
+class ConsultationSessionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ConsultationSession
+        fields = ("id", "title", "created_at", "updated_at")

@@ -1,9 +1,10 @@
 from rest_framework import generics, permissions, status, viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from django.shortcuts import get_object_or_404
 
-from .models import User, HealthProfile, HealthIssue, ConsultationMessage
-from .serializers import UserRegisterSerializer, UserResponseSerializer, UserUpdateSerializer, HealthProfileSerializer, HealthIssueSerializer, ConsultationMessageSerializer,ConsultationRequestSerializer
+from .models import User, HealthProfile, HealthIssue, ConsultationMessage, ConsultationSession
+from .serializers import UserRegisterSerializer, UserResponseSerializer, UserUpdateSerializer, HealthProfileSerializer, HealthIssueSerializer, ConsultationMessageSerializer,ConsultationRequestSerializer, ConsultationSessionSerializer
 from .perms import HealthProfileOwner
 
 from healthplanapp.services.consultation.consultation_service import prepare_consultation
@@ -85,3 +86,17 @@ class ConsultationViewSet(viewsets.ViewSet, generics.CreateAPIView):
         )
 
         return Response(ConsultationMessageSerializer(message).data, status=status.HTTP_201_CREATED)
+    @action(methods=["get"], detail=False, url_path="sessions")
+    def sessions(self, request):
+        sessions = request.user.consultation_sessions.all().order_by("-updated_at")
+        return Response(ConsultationSessionSerializer(sessions, many=True).data, status=status.HTTP_200_OK)
+    @action(methods=["get"], detail=False, url_path=r"sessions/(?P<session_id>[^/.]+)/messages")
+    def session_messages(self, request, session_id=None):
+        session = get_object_or_404(ConsultationSession, id=session_id, user=request.user)
+        messages = session.messages.all().order_by("created_at")
+        return Response(ConsultationMessageSerializer(messages, many=True).data, status=status.HTTP_200_OK)
+    @action(methods=["delete"], detail=False, url_path=r"sessions/(?P<session_id>[^/.]+)")
+    def delete_session(self, request, session_id=None):
+        session = get_object_or_404(ConsultationSession, id=session_id, user=request.user)
+        session.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
