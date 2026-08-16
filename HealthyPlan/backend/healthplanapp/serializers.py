@@ -4,7 +4,7 @@ from django.db import transaction
 from rest_framework import serializers
 from django.utils import timezone as django_timezone
 
-from .models import User, HealthProfile, HealthIssue, ConsultationSession, ConsultationMessage
+from .models import User, HealthProfile, HealthIssue, ConsultationSession, ConsultationMessage, Food, HealthPlan, Meal, MealItem
 
 
 class UserResponseSerializer(serializers.ModelSerializer):
@@ -179,3 +179,55 @@ class ConsultationSessionSerializer(serializers.ModelSerializer):
     class Meta:
         model = ConsultationSession
         fields = ("id", "title", "created_at", "updated_at")
+        
+class ConsultationSessionUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ConsultationSession
+        fields = ("title",)
+
+    def validate_title(self, value):
+        value = value.strip()
+
+        if not value:
+            raise serializers.ValidationError("Tiêu đề không được để trống.")
+
+        return value
+
+class FoodSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Food
+        fields = ("id", "food_id", "source_name", "name_vi", "name_en", "category_vi", "category_en", "item_type", "processing_level", "kcal_per_100g", "protein_g", "fat_g", "carb_g", "fiber_g", "sodium_mg", "potassium_mg", "saturated_fat_g")
+        read_only_fields = fields
+
+class MealItemSerializer(serializers.ModelSerializer):
+    food = FoodSerializer(read_only=True)
+
+    class Meta:
+        model = MealItem
+        fields = ["id", "food", "serving_grams"]
+
+class MealSerializer(serializers.ModelSerializer):
+    items = MealItemSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Meal
+        fields = ["id", "date", "meal_type", "items"]
+
+class MealHealthPlanSerializer(serializers.ModelSerializer):
+    meals = MealSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = HealthPlan
+        fields = ["id", "title", "plan_type", "start_date", "end_date", "review_status", "review_note", "meals"]
+
+class MealPlanGenerateSerializer(serializers.Serializer):
+    plan_date = serializers.DateField(required=False)
+    title = serializers.CharField(max_length=255, required=False, allow_blank=False)
+
+class MealPlanGenerationResultSerializer(serializers.Serializer):
+    health_plan = MealHealthPlanSerializer(read_only=True)
+    status = serializers.CharField(read_only=True)
+    attempt_count = serializers.IntegerField(read_only=True)
+    adjustments = serializers.JSONField(read_only=True)
+    evaluation = serializers.JSONField(read_only=True)

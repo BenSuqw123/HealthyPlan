@@ -1,0 +1,43 @@
+import { StyleSheet } from "react-native";
+
+import { Colors, Radius, Shadow, Spacing } from "../../configs/Theme";
+
+export default StyleSheet.create({
+    scroll: {paddingBottom: Spacing.huge},
+    hero: {paddingHorizontal: Spacing.medium, paddingTop: Spacing.medium, paddingBottom: Spacing.large, backgroundColor: Colors.primary},
+    eyebrow: {fontSize: 14, color: "#D8F0E4"},
+    greeting: {marginTop: 3, fontSize: 27, lineHeight: 34, fontWeight: "800", color: Colors.surface},
+    heroText: {marginTop: 7, maxWidth: 330, fontSize: 14, lineHeight: 21, color: "#D8F0E4"},
+    content: {padding: Spacing.medium},
+    overviewCard: {marginTop: -30, marginBottom: Spacing.medium},
+    goalRow: {flexDirection: "row", alignItems: "center"},
+    goalIcon: {width: 48, height: 48, marginRight: 12, borderRadius: 16, alignItems: "center", justifyContent: "center", backgroundColor: Colors.primaryLight},
+    goalLabel: {fontSize: 12, color: Colors.textSecondary},
+    goalValue: {marginTop: 2, fontSize: 18, fontWeight: "800", color: Colors.text},
+    metrics: {marginTop: Spacing.medium, flexDirection: "row"},
+    metric: {flex: 1, padding: 12, borderRadius: Radius.small, backgroundColor: Colors.background},
+    metricSpacing: {marginRight: 8},
+    metricValue: {fontSize: 16, fontWeight: "800", color: Colors.text},
+    metricLabel: {marginTop: 3, fontSize: 11, color: Colors.textSecondary},
+    sectionHeader: {marginTop: Spacing.small, marginBottom: 12, flexDirection: "row", alignItems: "center", justifyContent: "space-between"},
+    sectionTitle: {fontSize: 19, fontWeight: "800", color: Colors.text},
+    sectionLink: {paddingVertical: 6, fontSize: 13, fontWeight: "700", color: Colors.primary},
+    quickGrid: {flexDirection: "row", flexWrap: "wrap", marginHorizontal: -5},
+    quickAction: {width: "50%", padding: 5},
+    quickActionInner: {minHeight: 116, padding: 14, borderWidth: 1, borderColor: Colors.border, borderRadius: Radius.medium, backgroundColor: Colors.surface, ...Shadow},
+    quickIcon: {width: 42, height: 42, borderRadius: 14, alignItems: "center", justifyContent: "center", backgroundColor: Colors.primaryLight},
+    quickTitle: {marginTop: 10, fontSize: 14, fontWeight: "700", color: Colors.text},
+    quickDescription: {marginTop: 3, fontSize: 11, lineHeight: 16, color: Colors.textSecondary},
+    planCard: {marginBottom: Spacing.medium},
+    planDate: {fontSize: 12, fontWeight: "700", color: Colors.primary},
+    planTitle: {marginTop: 5, fontSize: 17, fontWeight: "800", color: Colors.text},
+    planMeta: {marginTop: 5, fontSize: 13, color: Colors.textSecondary},
+    planError: {padding: 14, borderRadius: Radius.medium, backgroundColor: "#FFF5F0"},
+    planErrorText: {fontSize: 13, lineHeight: 19, color: Colors.error},
+    retryText: {marginTop: 6, fontSize: 13, fontWeight: "700", color: Colors.primary},
+    planLoading: {paddingVertical: 22},
+    emptyPlan: {padding: Spacing.medium, alignItems: "center", borderWidth: 1, borderStyle: "dashed", borderColor: Colors.border, borderRadius: Radius.medium, backgroundColor: Colors.surface},
+    emptyTitle: {marginTop: 8, fontSize: 15, fontWeight: "700", color: Colors.text},
+    emptyText: {marginTop: 4, fontSize: 13, textAlign: "center", color: Colors.textSecondary},
+    emptyButton: {marginTop: 12, alignSelf: "stretch"}
+});

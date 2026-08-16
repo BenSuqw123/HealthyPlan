@@ -55,8 +55,20 @@ def run_rag_retrieval(query, top_n=None):
         "router_result": router_result,
     }
 
+def build_contextual_query(query, conversation_history=None):
+    conversation_history = conversation_history or []
 
-def run_rag_pipeline(query, health_context=None, top_n=None, llm=None):
+    for message in reversed(conversation_history):
+        if message.get("role") == "user":
+            previous_query = str(message.get("content") or "").strip()
+
+            if previous_query:
+                return f"{previous_query}\n{query}"
+
+    return query
+    
+def run_rag_pipeline(query, health_context=None,conversation_history=None, top_n=None, llm=None):
+    query = build_contextual_query(query, conversation_history)
     rag_retrieval_result = run_rag_retrieval(
         query=query,
         top_n=top_n,
@@ -67,6 +79,7 @@ def run_rag_pipeline(query, health_context=None, top_n=None, llm=None):
     )
 
     context_data["health_context"] = health_context or {}
+    context_data["conversation_history"] = conversation_history or []
 
     answer_result = generate_health_answer(
         context_data=context_data,
